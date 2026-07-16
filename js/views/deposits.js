@@ -13,8 +13,19 @@ import {
 const DAY_MS = 86400000;
 let selectedDepositId = null;
 let rateFilterCurrency = "BYN";
+let rateSortKey = "rate"; // "rate" | "term"
+let taxFreeOnly = false;
 let tableFilter = { currency: "all", search: "" };
 let tableSort = { key: "startDate", dir: "desc" };
+
+// Belarusian tax rule: interest on a deposit is tax-free only if it's placed
+// for at least this many months - 13 for BYN, 24 for foreign currency.
+const TAX_FREE_MIN_MONTHS = { BYN: 13, USD: 24, EUR: 24, RUB: 24 };
+
+function isTaxFree(offer) {
+  const threshold = TAX_FREE_MIN_MONTHS[offer.currency];
+  return threshold != null && offer.termMonths != null && offer.termMonths >= threshold;
+}
 
 export function depositsAggregateSeries(deposits) {
   const byCurrency = new Map();
@@ -138,16 +149,56 @@ export function renderDeposits(container, ctx) {
       )
     );
     ratesCard.appendChild(tabs);
-    ratesCard.appendChild(
-      el("p", { class: "muted small" }, `Источник: myfin.by · обновлено ${formatDate(bankRates.updatedAt)}`)
+
+    const sortRow = el("div", { class: "chip-row" }, [
+      el(
+        "button",
+        {
+          type: "button",
+          class: "chip" + (rateSortKey === "rate" ? " is-active" : ""),
+          onClick: () => { rateSortKey = "rate"; ctx.rerender(); },
+        },
+        "По ставке"
+      ),
+      el(
+        "button",
+        {
+          type: "button",
+          class: "chip" + (rateSortKey === "term" ? " is-active" : ""),
+          onClick: () => { rateSortKey = "term"; ctx.rerender(); },
+        },
+        "По сроку"
+      ),
+      el(
+        "button",
+        {
+          type: "button",
+          class: "chip" + (taxFreeOnly ? " is-active" : ""),
+          onClick: () => { taxFreeOnly = !taxFreeOnly; ctx.rerender(); },
+        },
+        `Без налога (от ${TAX_FREE_MIN_MONTHS[rateFilterCurrency]} мес.)`
+      ),
+    ]);
+    ratesCard.appendChild(sortRow);
+
+    let offers = bankRates.offers.filter((o) => o.currency === rateFilterCurrency);
+    if (taxFreeOnly) offers = offers.filter(isTaxFree);
+    offers = offers.sort((a, b) =>
+      rateSortKey === "term" ? (b.termMonths || 0) - (a.termMonths || 0) : b.rate - a.rate
     );
 
-    const offers = bankRates.offers
-      .filter((o) => o.currency === rateFilterCurrency)
-      .sort((a, b) => b.rate - a.rate)
-      .slice(0, 12);
+    ratesCard.appendChild(
+      el(
+        "p",
+        { class: "muted small" },
+        `Источник: myfin.by · обновлено ${formatDate(bankRates.updatedAt)} · показано ${offers.length} из ${bankRates.offers.filter((o) => o.currency === rateFilterCurrency).length}`
+      )
+    );
 
     const list = el("div", { class: "rate-list" });
+    if (!offers.length) {
+      list.appendChild(el("p", { class: "muted" }, "Нет предложений по заданным фильтрам."));
+    }
     for (const offer of offers) {
       list.appendChild(
         el("div", { class: "rate-item" }, [
@@ -159,6 +210,7 @@ export function renderDeposits(container, ctx) {
             el("span", { class: "rate-pill" }, `${offer.rate}%`),
             offer.termMonths ? el("span", { class: "muted small" }, `${offer.termMonths} мес.`) : null,
             offer.capitalization ? el("span", { class: "tag" }, "Капитализация") : null,
+            isTaxFree(offer) ? el("span", { class: "tag tag-good" }, "Без налога") : null,
           ]),
           el(
             "button",

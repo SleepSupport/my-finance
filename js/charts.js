@@ -7,6 +7,16 @@ const PALETTE = [
   "#9b6bff", "#17b6c9", "#e0b93a", "#6b7280",
 ];
 
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+
 function niceStep(rawStep) {
   if (rawStep <= 0) return 1;
   const magnitude = 10 ** Math.floor(Math.log10(rawStep));
@@ -27,6 +37,7 @@ export class LineChart {
     this.emptyMessage = opts.emptyMessage || "Пока нет данных";
     this.series = [];
     this.hidden = new Set();
+    this._hoverPixelX = null;
 
     this.wrap = document.createElement("div");
     this.wrap.className = "chart-wrap";
@@ -42,6 +53,21 @@ export class LineChart {
     this.ctx = this.canvas.getContext("2d");
     this._resizeObserver = new ResizeObserver(() => this.draw());
     this._resizeObserver.observe(this.wrap);
+
+    const setHover = (x) => {
+      this._hoverPixelX = x;
+      this.draw();
+    };
+    const clearHover = () => setHover(null);
+    this.canvas.addEventListener("mousemove", (e) => setHover(e.offsetX));
+    this.canvas.addEventListener("mouseleave", clearHover);
+    const setHoverFromTouch = (e) => {
+      const rect = this.canvas.getBoundingClientRect();
+      setHover(e.touches[0].clientX - rect.left);
+    };
+    this.canvas.addEventListener("touchstart", setHoverFromTouch, { passive: true });
+    this.canvas.addEventListener("touchmove", setHoverFromTouch, { passive: true });
+    this.canvas.addEventListener("touchend", clearHover);
   }
 
   setSeries(series) {
@@ -160,6 +186,64 @@ export class LineChart {
         ctx.arc(xToPx(p.x), yToPx(p.y), pts.length === 1 ? 3.5 : 2.5, 0, Math.PI * 2);
         ctx.fill();
       }
+    }
+
+    // hover: vertical guide + tooltip with each series' value at that point
+    if (this._hoverPixelX !== null && this._hoverPixelX >= padding.left && this._hoverPixelX <= cssWidth - padding.right) {
+      const hoverX = minX + ((this._hoverPixelX - padding.left) / plotW) * (maxX - minX);
+
+      ctx.save();
+      ctx.strokeStyle = gridColor;
+      ctx.setLineDash([4, 4]);
+      ctx.beginPath();
+      ctx.moveTo(this._hoverPixelX, padding.top);
+      ctx.lineTo(this._hoverPixelX, padding.top + plotH);
+      ctx.stroke();
+      ctx.restore();
+
+      const rows = [];
+      for (const s of visible) {
+        let nearest = s.points[0];
+        let bestDist = Infinity;
+        for (const p of s.points) {
+          const d = Math.abs(p.x - hoverX);
+          if (d < bestDist) {
+            bestDist = d;
+            nearest = p;
+          }
+        }
+        rows.push({ label: s.label, color: s.color, value: nearest.y, x: nearest.x });
+        ctx.fillStyle = s.color;
+        ctx.beginPath();
+        ctx.arc(xToPx(nearest.x), yToPx(nearest.y), 4.5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      const surfaceColor = styles.getPropertyValue("--surface").trim() || "#ffffff";
+      const dateLabel = this.formatX(rows[0] ? rows[0].x : hoverX);
+      const lines = [{ text: dateLabel, color: textColor }, ...rows.map((r) => ({ text: `${r.label}: ${this.formatY(r.value)}`, color: r.color }))];
+
+      ctx.font = "12px system-ui, sans-serif";
+      const lineHeight = 16;
+      const boxWidth = Math.max(...lines.map((l) => ctx.measureText(l.text).width)) + 20;
+      const boxHeight = lines.length * lineHeight + 10;
+      let boxX = this._hoverPixelX + 10;
+      if (boxX + boxWidth > cssWidth - padding.right) boxX = this._hoverPixelX - boxWidth - 10;
+      const boxY = padding.top + 4;
+
+      ctx.fillStyle = surfaceColor;
+      ctx.strokeStyle = gridColor;
+      ctx.lineWidth = 1;
+      roundRect(ctx, boxX, boxY, boxWidth, boxHeight, 6);
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.textAlign = "left";
+      ctx.textBaseline = "top";
+      lines.forEach((line, i) => {
+        ctx.fillStyle = line.color;
+        ctx.fillText(line.text, boxX + 10, boxY + 5 + i * lineHeight);
+      });
     }
   }
 
