@@ -13,6 +13,7 @@ directly and never fetches the network itself.
 import json
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -126,16 +127,40 @@ def parse_card(card, currency):
     }
 
 
+MAX_PAGES = 20  # safety cap, well above what any currency actually needs
+
+
 def fetch_currency(currency, url):
-    resp = requests.get(url, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "lxml")
-    cards = soup.select(".products__product")
+    """myfin.by paginates at 20 offers/page (?page=2, ?page=3, ...). A single
+    request only ever sees the first page, so we follow pagination - reading
+    the site's own "count_product" total to know when to stop - until we've
+    collected everything or hit MAX_PAGES as a safety net."""
     offers = []
-    for card in cards:
-        offer = parse_card(card, currency)
-        if offer:
-            offers.append(offer)
+    total_expected = None
+    page = 1
+    while page <= MAX_PAGES:
+        page_url = url if page == 1 else f"{url}?page={page}"
+        resp = requests.get(page_url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+
+        if total_expected is None:
+            count_input = soup.select_one(".count_product")
+            if count_input and count_input.get("value", "").isdigit():
+                total_expected = int(count_input["value"])
+
+        cards = soup.select(".products__product")
+        if not cards:
+            break
+        for card in cards:
+            offer = parse_card(card, currency)
+            if offer:
+                offers.append(offer)
+
+        if total_expected is not None and len(offers) >= total_expected:
+            break
+        page += 1
+        time.sleep(0.3)  # be polite to the site between page requests
     return offers
 
 

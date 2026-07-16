@@ -15,6 +15,7 @@ let selectedDepositId = null;
 let rateFilterCurrency = "BYN";
 let rateSortKey = "rate"; // "rate" | "term"
 let taxFreeOnly = false;
+let rateSearch = "";
 let tableFilter = { currency: "all", search: "" };
 let tableSort = { key: "startDate", dir: "desc" };
 
@@ -181,8 +182,25 @@ export function renderDeposits(container, ctx) {
     ]);
     ratesCard.appendChild(sortRow);
 
-    let offers = bankRates.offers.filter((o) => o.currency === rateFilterCurrency);
+    const searchInput = el("input", {
+      class: "input",
+      type: "search",
+      placeholder: "Поиск по банку или названию вклада…",
+      value: rateSearch,
+      onInput: (e) => {
+        rateSearch = e.target.value;
+        ctx.rerender();
+      },
+    });
+    ratesCard.appendChild(el("div", { class: "rate-search" }, [searchInput]));
+
+    const byCurrency = bankRates.offers.filter((o) => o.currency === rateFilterCurrency);
+    let offers = byCurrency;
     if (taxFreeOnly) offers = offers.filter(isTaxFree);
+    if (rateSearch.trim()) {
+      const q = rateSearch.trim().toLowerCase();
+      offers = offers.filter((o) => `${o.bank} ${o.product}`.toLowerCase().includes(q));
+    }
     offers = offers.sort((a, b) =>
       rateSortKey === "term" ? (b.termMonths || 0) - (a.termMonths || 0) : b.rate - a.rate
     );
@@ -191,7 +209,7 @@ export function renderDeposits(container, ctx) {
       el(
         "p",
         { class: "muted small" },
-        `Источник: myfin.by · обновлено ${formatDate(bankRates.updatedAt)} · показано ${offers.length} из ${bankRates.offers.filter((o) => o.currency === rateFilterCurrency).length}`
+        `Источник: myfin.by · обновлено ${formatDate(bankRates.updatedAt)} · показано ${offers.length} из ${byCurrency.length}`
       )
     );
 
@@ -206,9 +224,16 @@ export function renderDeposits(container, ctx) {
             el("strong", {}, offer.bank),
             el("span", { class: "muted small" }, offer.product),
           ]),
+          el("div", { class: "rate-item-metrics" }, [
+            el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Ставка"), el("span", { class: "rate-metric-value" }, `${offer.rate}%`)]),
+            offer.yieldTotal != null
+              ? el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Доход"), el("span", { class: "rate-metric-value" }, `${offer.yieldTotal}%`)])
+              : null,
+            offer.termMonths
+              ? el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Срок"), el("span", { class: "rate-metric-value" }, `${offer.termMonths} мес.`)])
+              : null,
+          ]),
           el("div", { class: "rate-item-tags" }, [
-            el("span", { class: "rate-pill" }, `${offer.rate}%`),
-            offer.termMonths ? el("span", { class: "muted small" }, `${offer.termMonths} мес.`) : null,
             offer.capitalization ? el("span", { class: "tag" }, "Капитализация") : null,
             isTaxFree(offer) ? el("span", { class: "tag tag-good" }, "Без налога") : null,
           ]),
