@@ -1,9 +1,12 @@
 import { el, formatMoney, formatDate, formatMonthAxis, currencySelect, showToast, confirmDialog } from "../ui.js";
 import { generateId } from "../storage.js";
 import { LineChart } from "../charts.js";
+import { sortableHeader, sortRows, renderFilterBar, applyCommonFilters } from "../table-controls.js";
 import { savingsGoalProgress } from "../calculators.js";
 
 let selectedGoalId = null;
+let tableFilter = { currency: "all", search: "" };
+let tableSort = { key: "name", dir: "asc" };
 
 export function savingsAggregateSeries(goals) {
   const byCurrency = new Map();
@@ -99,11 +102,44 @@ export function renderSavings(container, ctx) {
   if (!state.savingsGoals.length) {
     tableCard.appendChild(el("p", { class: "muted" }, "Пока нет целей накопления."));
   } else {
+    const usedCurrencies = [...new Set(state.savingsGoals.map((g) => g.currency))];
+    renderFilterBar(tableCard, {
+      state: tableFilter,
+      currencies: usedCurrencies,
+      onChange: ctx.rerender,
+      searchPlaceholder: "Название цели…",
+    });
+
+    const filtered = applyCommonFilters(state.savingsGoals, tableFilter, {
+      currencyOf: (g) => g.currency,
+      searchableText: (g) => g.name,
+    });
+
+    if (!filtered.length) {
+      tableCard.appendChild(el("p", { class: "muted" }, "Нет целей по заданным фильтрам."));
+    } else {
+    const accessors = {
+      name: (g) => g.name.toLowerCase(),
+      currency: (g) => g.currency,
+      total: (g) => savingsGoalProgress(g).total,
+      target: (g) => g.targetAmount,
+      percent: (g) => savingsGoalProgress(g).percent,
+    };
+    const sorted = sortRows(filtered, tableSort, accessors);
     const table = el("table", { class: "table" }, [
-      el("thead", {}, el("tr", {}, ["Цель", "Накоплено", "Прогресс", ""].map((h) => el("th", {}, h)))),
+      el(
+        "thead",
+        {},
+        el("tr", {}, [
+          sortableHeader("Цель", "name", tableSort, ctx.rerender),
+          sortableHeader("Накоплено", "total", tableSort, ctx.rerender),
+          sortableHeader("Прогресс", "percent", tableSort, ctx.rerender),
+          el("th", {}, ""),
+        ])
+      ),
     ]);
     const tbody = el("tbody");
-    for (const g of state.savingsGoals) {
+    for (const g of sorted) {
       const progress = savingsGoalProgress(g);
       const row = el("tr", { class: g.id === selectedGoalId ? "is-selected" : "" }, [
         el("td", {}, [el("strong", {}, g.name), el("div", { class: "muted small" }, g.currency)]),
@@ -146,6 +182,7 @@ export function renderSavings(container, ctx) {
     }
     table.appendChild(tbody);
     tableCard.appendChild(table);
+    }
   }
 
   // --- Chart ---

@@ -135,8 +135,17 @@ label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color:
 .table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .table th, .table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .table th { color: var(--muted); font-weight: 500; }
+.table th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.table th.sortable:hover { color: var(--text); }
+.table th.is-sorted { color: var(--accent); }
 .table tr.is-selected { background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .table-actions { display: flex; gap: 6px; white-space: nowrap; }
+
+.filter-bar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.filter-controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
+.filter-field { flex: 0 1 180px; }
+.filter-field .input { min-width: 0; }
+.filter-controls .btn { align-self: flex-end; }
 
 .muted { color: var(--muted); }
 .small { font-size: 12px; }

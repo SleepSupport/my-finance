@@ -1,7 +1,11 @@
 import { el, formatMoney, formatDate, formatMonthAxis, currencySelect, showToast, confirmDialog } from "../ui.js";
 import { generateId } from "../storage.js";
 import { LineChart } from "../charts.js";
+import { sortableHeader, sortRows, renderFilterBar, applyCommonFilters } from "../table-controls.js";
 import { monthlyTotalsByCurrency, sumByCurrency } from "../calculators.js";
+
+let tableFilter = { currency: "all", search: "", dateFrom: "", dateTo: "" };
+let tableSort = { key: "date", dir: "desc" };
 
 export function renderSalary(container, ctx) {
   const { state, persist, registerChart, currencies } = ctx;
@@ -44,40 +48,77 @@ export function renderSalary(container, ctx) {
   }
 
   const tableCard = el("div", { class: "card span-2" }, [el("h2", {}, "История доходов")]);
+  let visibleSalary = state.salary;
   if (!state.salary.length) {
     tableCard.appendChild(el("p", { class: "muted" }, "Пока нет записей — добавьте первую слева."));
   } else {
-    const table = el("table", { class: "table" }, [el("thead", {}, el("tr", {}, ["Дата", "Источник", "Сумма", ""].map((h) => el("th", {}, h))))]);
-    const tbody = el("tbody");
-    for (const s of [...state.salary].sort((a, b) => new Date(b.date) - new Date(a.date))) {
-      tbody.appendChild(
-        el("tr", {}, [
-          el("td", {}, formatDate(s.date)),
-          el("td", {}, [s.source || "—", s.note ? el("div", { class: "muted small" }, s.note) : null]),
-          el("td", {}, formatMoney(s.amount, s.currency)),
-          el(
-            "td",
-            { class: "table-actions" },
+    const usedCurrencies = [...new Set(state.salary.map((s) => s.currency))];
+    renderFilterBar(tableCard, {
+      state: tableFilter,
+      currencies: usedCurrencies,
+      onChange: ctx.rerender,
+      searchPlaceholder: "Источник, заметка…",
+      showDateRange: true,
+    });
+
+    visibleSalary = applyCommonFilters(state.salary, tableFilter, {
+      currencyOf: (s) => s.currency,
+      dateOf: (s) => s.date,
+      searchableText: (s) => `${s.source || ""} ${s.note || ""}`,
+    });
+
+    if (!visibleSalary.length) {
+      tableCard.appendChild(el("p", { class: "muted" }, "Нет записей по заданным фильтрам."));
+    } else {
+      const accessors = {
+        date: (s) => new Date(s.date).getTime(),
+        source: (s) => (s.source || "").toLowerCase(),
+        amount: (s) => s.amount,
+      };
+      const sorted = sortRows(visibleSalary, tableSort, accessors);
+      const table = el("table", { class: "table" }, [
+        el(
+          "thead",
+          {},
+          el("tr", {}, [
+            sortableHeader("Дата", "date", tableSort, ctx.rerender),
+            sortableHeader("Источник", "source", tableSort, ctx.rerender),
+            sortableHeader("Сумма", "amount", tableSort, ctx.rerender),
+            el("th", {}, ""),
+          ])
+        ),
+      ]);
+      const tbody = el("tbody");
+      for (const s of sorted) {
+        tbody.appendChild(
+          el("tr", {}, [
+            el("td", {}, formatDate(s.date)),
+            el("td", {}, [s.source || "—", s.note ? el("div", { class: "muted small" }, s.note) : null]),
+            el("td", {}, formatMoney(s.amount, s.currency)),
             el(
-              "button",
-              {
-                class: "btn btn-small btn-danger",
-                type: "button",
-                onClick: () => {
-                  if (!confirmDialog("Удалить запись о доходе?")) return;
-                  state.salary = state.salary.filter((x) => x.id !== s.id);
-                  persist();
-                  ctx.rerender();
+              "td",
+              { class: "table-actions" },
+              el(
+                "button",
+                {
+                  class: "btn btn-small btn-danger",
+                  type: "button",
+                  onClick: () => {
+                    if (!confirmDialog("Удалить запись о доходе?")) return;
+                    state.salary = state.salary.filter((x) => x.id !== s.id);
+                    persist();
+                    ctx.rerender();
+                  },
                 },
-              },
-              "Удалить"
-            )
-          ),
-        ])
-      );
+                "Удалить"
+              )
+            ),
+          ])
+        );
+      }
+      table.appendChild(tbody);
+      tableCard.appendChild(table);
     }
-    table.appendChild(tbody);
-    tableCard.appendChild(table);
   }
 
   const chartCard = el("div", { class: "card span-2" }, [el("h2", {}, "Доходы по месяцам")]);
@@ -89,7 +130,7 @@ export function renderSalary(container, ctx) {
     emptyMessage: "Добавьте доходы, чтобы увидеть график",
   });
   registerChart(chart);
-  const monthly = monthlyTotalsByCurrency(state.salary);
+  const monthly = monthlyTotalsByCurrency(visibleSalary);
   chart.setSeries([...monthly.entries()].map(([currency, points]) => ({ id: currency, label: currency, points })));
 
   container.appendChild(el("div", { class: "view-grid" }, [formCard, totalsCard, tableCard, chartCard]));

@@ -1,9 +1,12 @@
 import { el, formatMoney, formatDate, formatMonthAxis, currencySelect, showToast, confirmDialog } from "../ui.js";
 import { generateId } from "../storage.js";
 import { LineChart } from "../charts.js";
+import { sortableHeader, sortRows, renderFilterBar, applyCommonFilters } from "../table-controls.js";
 import { monthlyTotalsByCurrency, sumByCurrency } from "../calculators.js";
 
 let categoryFilter = "all";
+let tableFilter = { currency: "all", search: "", dateFrom: "", dateTo: "" };
+let tableSort = { key: "date", dir: "desc" };
 
 export function renderExpenses(container, ctx) {
   const { state, persist, registerChart, currencies } = ctx;
@@ -93,41 +96,79 @@ export function renderExpenses(container, ctx) {
       el("button", { class: "chip is-active", type: "button", onClick: () => { categoryFilter = "all"; ctx.rerender(); } }, `${categoryFilter} ✕`)
     );
   }
-  const visibleExpenses = state.expenses.filter((e) => categoryFilter === "all" || e.category === categoryFilter);
-  if (!visibleExpenses.length) {
+
+  let visibleExpenses = state.expenses.filter((e) => categoryFilter === "all" || e.category === categoryFilter);
+
+  if (!state.expenses.length) {
     tableCard.appendChild(el("p", { class: "muted" }, "Нет записей."));
   } else {
-    const table = el("table", { class: "table" }, [el("thead", {}, el("tr", {}, ["Дата", "Категория", "Сумма", ""].map((h) => el("th", {}, h))))]);
-    const tbody = el("tbody");
-    for (const e of [...visibleExpenses].sort((a, b) => new Date(b.date) - new Date(a.date))) {
-      tbody.appendChild(
-        el("tr", {}, [
-          el("td", {}, formatDate(e.date)),
-          el("td", {}, [e.category || "—", e.note ? el("div", { class: "muted small" }, e.note) : null]),
-          el("td", {}, formatMoney(e.amount, e.currency)),
-          el(
-            "td",
-            { class: "table-actions" },
+    const usedCurrencies = [...new Set(state.expenses.map((e) => e.currency))];
+    renderFilterBar(tableCard, {
+      state: tableFilter,
+      currencies: usedCurrencies,
+      onChange: ctx.rerender,
+      searchPlaceholder: "Категория, заметка…",
+      showDateRange: true,
+    });
+
+    visibleExpenses = applyCommonFilters(visibleExpenses, tableFilter, {
+      currencyOf: (e) => e.currency,
+      dateOf: (e) => e.date,
+      searchableText: (e) => `${e.category || ""} ${e.note || ""}`,
+    });
+
+    if (!visibleExpenses.length) {
+      tableCard.appendChild(el("p", { class: "muted" }, "Нет трат по заданным фильтрам."));
+    } else {
+      const accessors = {
+        date: (e) => new Date(e.date).getTime(),
+        category: (e) => (e.category || "").toLowerCase(),
+        amount: (e) => e.amount,
+      };
+      const sorted = sortRows(visibleExpenses, tableSort, accessors);
+      const table = el("table", { class: "table" }, [
+        el(
+          "thead",
+          {},
+          el("tr", {}, [
+            sortableHeader("Дата", "date", tableSort, ctx.rerender),
+            sortableHeader("Категория", "category", tableSort, ctx.rerender),
+            sortableHeader("Сумма", "amount", tableSort, ctx.rerender),
+            el("th", {}, ""),
+          ])
+        ),
+      ]);
+      const tbody = el("tbody");
+      for (const e of sorted) {
+        tbody.appendChild(
+          el("tr", {}, [
+            el("td", {}, formatDate(e.date)),
+            el("td", {}, [e.category || "—", e.note ? el("div", { class: "muted small" }, e.note) : null]),
+            el("td", {}, formatMoney(e.amount, e.currency)),
             el(
-              "button",
-              {
-                class: "btn btn-small btn-danger",
-                type: "button",
-                onClick: () => {
-                  if (!confirmDialog("Удалить трату?")) return;
-                  state.expenses = state.expenses.filter((x) => x.id !== e.id);
-                  persist();
-                  ctx.rerender();
+              "td",
+              { class: "table-actions" },
+              el(
+                "button",
+                {
+                  class: "btn btn-small btn-danger",
+                  type: "button",
+                  onClick: () => {
+                    if (!confirmDialog("Удалить трату?")) return;
+                    state.expenses = state.expenses.filter((x) => x.id !== e.id);
+                    persist();
+                    ctx.rerender();
+                  },
                 },
-              },
-              "Удалить"
-            )
-          ),
-        ])
-      );
+                "Удалить"
+              )
+            ),
+          ])
+        );
+      }
+      table.appendChild(tbody);
+      tableCard.appendChild(table);
     }
-    table.appendChild(tbody);
-    tableCard.appendChild(table);
   }
 
   const chartCard = el("div", { class: "card span-2" }, [el("h2", {}, "Траты по месяцам")]);
@@ -139,7 +180,7 @@ export function renderExpenses(container, ctx) {
     emptyMessage: "Добавьте траты, чтобы увидеть график",
   });
   registerChart(chart);
-  const monthly = monthlyTotalsByCurrency(visibleExpenses.length ? visibleExpenses : state.expenses);
+  const monthly = monthlyTotalsByCurrency(visibleExpenses);
   chart.setSeries([...monthly.entries()].map(([currency, points]) => ({ id: currency, label: currency, points })));
 
   container.appendChild(el("div", { class: "view-grid" }, [formCard, breakdownCard, tableCard, chartCard]));

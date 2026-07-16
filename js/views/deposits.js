@@ -1,6 +1,7 @@
 import { el, formatMoney, formatDate, formatMonthAxis, currencySelect, showToast, confirmDialog } from "../ui.js";
 import { generateId } from "../storage.js";
 import { LineChart } from "../charts.js";
+import { sortableHeader, sortRows, renderFilterBar, applyCommonFilters } from "../table-controls.js";
 import {
   depositCurrentValue,
   depositProjectedFinalValue,
@@ -12,6 +13,8 @@ import {
 const DAY_MS = 86400000;
 let selectedDepositId = null;
 let rateFilterCurrency = "BYN";
+let tableFilter = { currency: "all", search: "" };
+let tableSort = { key: "startDate", dir: "desc" };
 
 export function depositsAggregateSeries(deposits) {
   const byCurrency = new Map();
@@ -187,11 +190,51 @@ export function renderDeposits(container, ctx) {
   if (!state.deposits.length) {
     tableCard.appendChild(el("p", { class: "muted" }, "Пока нет вкладов — добавьте первый слева."));
   } else {
+    const usedCurrencies = [...new Set(state.deposits.map((d) => d.currency))];
+    renderFilterBar(tableCard, {
+      state: tableFilter,
+      currencies: usedCurrencies,
+      onChange: ctx.rerender,
+      searchPlaceholder: "Банк, вклад, заметка…",
+    });
+
+    const filtered = applyCommonFilters(state.deposits, tableFilter, {
+      currencyOf: (d) => d.currency,
+      searchableText: (d) => `${d.bank} ${d.product} ${d.notes || ""}`,
+    });
+
+    if (!filtered.length) {
+      tableCard.appendChild(el("p", { class: "muted" }, "Нет вкладов по заданным фильтрам."));
+    } else {
+    const accessors = {
+      bank: (d) => d.bank.toLowerCase(),
+      currency: (d) => d.currency,
+      principal: (d) => d.principal,
+      rate: (d) => d.rate,
+      termMonths: (d) => d.termMonths,
+      startDate: (d) => new Date(d.startDate).getTime(),
+      current: (d) => depositCurrentValue(d),
+      final: (d) => depositProjectedFinalValue(d),
+    };
+    const sorted = sortRows(filtered, tableSort, accessors);
     const table = el("table", { class: "table" }, [
-      el("thead", {}, el("tr", {}, ["Банк", "Валюта", "Сумма", "Ставка", "Срок", "Текущая стоимость", "Итог по сроку", ""].map((h) => el("th", {}, h)))),
+      el(
+        "thead",
+        {},
+        el("tr", {}, [
+          sortableHeader("Банк", "bank", tableSort, ctx.rerender),
+          sortableHeader("Валюта", "currency", tableSort, ctx.rerender),
+          sortableHeader("Сумма", "principal", tableSort, ctx.rerender),
+          sortableHeader("Ставка", "rate", tableSort, ctx.rerender),
+          sortableHeader("Срок", "termMonths", tableSort, ctx.rerender),
+          sortableHeader("Текущая стоимость", "current", tableSort, ctx.rerender),
+          sortableHeader("Итог по сроку", "final", tableSort, ctx.rerender),
+          el("th", {}, ""),
+        ])
+      ),
     ]);
     const tbody = el("tbody");
-    for (const d of [...state.deposits].sort((a, b) => new Date(b.startDate) - new Date(a.startDate))) {
+    for (const d of sorted) {
       const current = depositCurrentValue(d);
       const final = depositProjectedFinalValue(d);
       const row = el("tr", { class: d.id === selectedDepositId ? "is-selected" : "" }, [
@@ -236,6 +279,7 @@ export function renderDeposits(container, ctx) {
     }
     table.appendChild(tbody);
     tableCard.appendChild(table);
+    }
   }
 
   // --- Chart ---
