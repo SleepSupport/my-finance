@@ -264,3 +264,185 @@ export class LineChart {
     }
   }
 }
+
+/** Donut chart for one-shot breakdowns (e.g. spending by category). Hover
+ * highlights a segment and swaps the center label to its value. */
+export class DonutChart {
+  constructor(container, opts = {}) {
+    this.container = container;
+    this.formatValue = opts.formatValue || ((v) => String(Math.round(v)));
+    this.emptyMessage = opts.emptyMessage || "Нет данных";
+    this.centerLabel = opts.centerLabel || "";
+    this.segments = [];
+    this._hoverIndex = null;
+    this._layout = null;
+
+    this.wrap = document.createElement("div");
+    this.wrap.className = "donut-wrap";
+    this.canvas = document.createElement("canvas");
+    this.canvas.className = "donut-canvas";
+    this.legend = document.createElement("div");
+    this.legend.className = "donut-legend";
+    this.wrap.appendChild(this.canvas);
+    this.wrap.appendChild(this.legend);
+    this.container.innerHTML = "";
+    this.container.appendChild(this.wrap);
+
+    this.ctx = this.canvas.getContext("2d");
+    this._resizeObserver = new ResizeObserver(() => this.draw());
+    this._resizeObserver.observe(this.wrap);
+
+    this.canvas.addEventListener("mousemove", (e) => this._handleHover(e.offsetX, e.offsetY));
+    this.canvas.addEventListener("mouseleave", () => {
+      if (this._hoverIndex !== null) {
+        this._hoverIndex = null;
+        this.draw();
+      }
+    });
+  }
+
+  setSegments(segments) {
+    this.segments = segments.map((s, i) => ({ color: PALETTE[i % PALETTE.length], ...s }));
+    this._hoverIndex = null;
+    setTimeout(() => this.draw(), 0);
+  }
+
+  destroy() {
+    this._resizeObserver.disconnect();
+  }
+
+  _handleHover(px, py) {
+    if (!this._layout) return;
+    const { cx, cy, rOuter, rInner } = this._layout;
+    const dx = px - cx;
+    const dy = py - cy;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    if (dist < rInner || dist > rOuter) {
+      if (this._hoverIndex !== null) {
+        this._hoverIndex = null;
+        this.draw();
+      }
+      return;
+    }
+    let angle = Math.atan2(dy, dx) + Math.PI / 2;
+    angle = ((angle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+    const total = this.segments.reduce((sum, seg) => sum + seg.value, 0);
+    let cursor = 0;
+    let idx = null;
+    for (let i = 0; i < this.segments.length; i++) {
+      const frac = total > 0 ? this.segments[i].value / total : 0;
+      const end = cursor + frac * 2 * Math.PI;
+      if (angle >= cursor && angle < end) {
+        idx = i;
+        break;
+      }
+      cursor = end;
+    }
+    if (idx !== this._hoverIndex) {
+      this._hoverIndex = idx;
+      this.draw();
+    }
+  }
+
+  draw() {
+    const ctx = this.ctx;
+    const cssWidth = Math.max(this.wrap.clientWidth, 180);
+    const cssHeight = 220;
+    const dpr = window.devicePixelRatio || 1;
+    this.canvas.width = cssWidth * dpr;
+    this.canvas.height = cssHeight * dpr;
+    this.canvas.style.width = cssWidth + "px";
+    this.canvas.style.height = cssHeight + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, cssWidth, cssHeight);
+
+    this._renderLegend();
+
+    const styles = getComputedStyle(document.documentElement);
+    const textColor = styles.getPropertyValue("--chart-text").trim() || "#6b7280";
+    const strongColor = styles.getPropertyValue("--text").trim() || "#111111";
+    const surfaceColor = styles.getPropertyValue("--surface").trim() || "#ffffff";
+
+    const total = this.segments.reduce((sum, seg) => sum + seg.value, 0);
+    if (!this.segments.length || total <= 0) {
+      ctx.fillStyle = textColor;
+      ctx.font = "14px system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(this.emptyMessage, cssWidth / 2, cssHeight / 2);
+      this._layout = null;
+      return;
+    }
+
+    const cx = cssWidth / 2;
+    const cy = cssHeight / 2;
+    const rOuter = Math.min(cssWidth, cssHeight) / 2 - 8;
+    const rInner = rOuter * 0.62;
+    this._layout = { cx, cy, rOuter, rInner };
+
+    let cursor = -Math.PI / 2;
+    this.segments.forEach((seg, i) => {
+      const frac = seg.value / total;
+      const start = cursor;
+      const end = cursor + frac * 2 * Math.PI;
+      const isHover = this._hoverIndex === i;
+      const r = isHover ? rOuter + 4 : rOuter;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.arc(cx, cy, r, start, end);
+      ctx.closePath();
+      ctx.globalAlpha = this._hoverIndex === null || isHover ? 1 : 0.45;
+      ctx.fillStyle = seg.color;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      cursor = end;
+    });
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, rInner, 0, Math.PI * 2);
+    ctx.fillStyle = surfaceColor;
+    ctx.fill();
+
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    if (this._hoverIndex !== null) {
+      const seg = this.segments[this._hoverIndex];
+      ctx.fillStyle = strongColor;
+      ctx.font = "600 15px system-ui, sans-serif";
+      ctx.fillText(this.formatValue(seg.value), cx, cy - 8);
+      ctx.fillStyle = textColor;
+      ctx.font = "12px system-ui, sans-serif";
+      ctx.fillText(seg.label, cx, cy + 12);
+    } else {
+      ctx.fillStyle = strongColor;
+      ctx.font = "600 16px system-ui, sans-serif";
+      ctx.fillText(this.formatValue(total), cx, cy - 6);
+      if (this.centerLabel) {
+        ctx.fillStyle = textColor;
+        ctx.font = "12px system-ui, sans-serif";
+        ctx.fillText(this.centerLabel, cx, cy + 14);
+      }
+    }
+  }
+
+  _renderLegend() {
+    this.legend.innerHTML = "";
+    const total = this.segments.reduce((sum, seg) => sum + seg.value, 0);
+    for (const seg of this.segments) {
+      const pct = total > 0 ? (seg.value / total) * 100 : 0;
+      const item = document.createElement("div");
+      item.className = "donut-legend-item";
+      const swatch = document.createElement("span");
+      swatch.className = "chart-legend-swatch";
+      swatch.style.background = seg.color;
+      const label = document.createElement("span");
+      label.className = "donut-legend-label";
+      label.textContent = seg.label;
+      const value = document.createElement("span");
+      value.className = "donut-legend-value muted small";
+      value.textContent = `${this.formatValue(seg.value)} · ${pct.toFixed(0)}%`;
+      item.append(swatch, label, value);
+      this.legend.appendChild(item);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 // App-shell service worker: makes the app installable and usable offline.
 // Bump CACHE_VERSION whenever any precached file changes so clients pick up
 // the new version instead of serving a stale cache forever.
-const CACHE_VERSION = "v3";
+const CACHE_VERSION = "v4";
 const CACHE_NAME = `finance-app-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -15,6 +15,8 @@ const PRECACHE_URLS = [
   "./js/charts.js",
   "./js/calculators.js",
   "./js/table-controls.js",
+  "./js/dashboard.js",
+  "./js/quick-add.js",
   "./js/views/deposits.js",
   "./js/views/savings.js",
   "./js/views/salary.js",

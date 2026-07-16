@@ -1,5 +1,6 @@
 import { loadState, saveState, exportStateToFile, importStateFromFile } from "./storage.js";
 import { el, showToast } from "./ui.js";
+import { mountQuickAdd } from "./quick-add.js";
 import { renderDeposits } from "./views/deposits.js";
 import { renderSavings } from "./views/savings.js";
 import { renderSalary } from "./views/salary.js";
@@ -12,7 +13,7 @@ let activeTab = "overview";
 let activeCharts = [];
 
 const TABS = [
-  { id: "overview", label: "Общий график", render: renderOverview },
+  { id: "overview", label: "Главная", render: renderOverview },
   { id: "deposits", label: "Вклады", render: renderDeposits },
   { id: "savings", label: "Накопления", render: renderSavings },
   { id: "salary", label: "Зарплата", render: renderSalary },
@@ -119,6 +120,7 @@ function registerServiceWorker() {
 async function init() {
   wireHeaderActions();
   registerServiceWorker();
+  mountQuickAdd({ state, persist, currencies: state.currencies, onSaved: render });
   await loadBankRates();
   render();
 }
