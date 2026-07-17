@@ -181,7 +181,7 @@ export function renderSavings(container, ctx) {
       tbody.appendChild(row);
     }
     table.appendChild(tbody);
-    tableCard.appendChild(table);
+    tableCard.appendChild(el("div", { class: "table-scroll" }, [table]));
     }
   }
 

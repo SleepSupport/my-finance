@@ -145,6 +145,43 @@ label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color:
 .table tr.is-selected { background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .table-actions { display: flex; gap: 6px; white-space: nowrap; }
 
+.table-scroll { overflow-x: auto; }
+
+/* Below 640px, tables with a lot of columns (Вклады) reflow from a grid into
+   stacked cards: each row becomes a card, each cell becomes a label/value
+   line using its data-label attribute instead of the (hidden) header row. */
+@media (max-width: 640px) {
+  .table--stack thead { display: none; }
+  .table--stack, .table--stack tbody, .table--stack tr, .table--stack td { display: block; width: 100%; }
+  .table--stack { border-collapse: separate; border-spacing: 0; }
+  .table--stack tr {
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 4px 10px;
+  }
+  .table--stack tr.is-selected { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .table--stack td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border);
+    text-align: right;
+  }
+  .table--stack td:last-child { border-bottom: none; }
+  .table--stack td[data-label]::before {
+    content: attr(data-label);
+    font-weight: 500;
+    color: var(--muted);
+    text-align: left;
+    flex-shrink: 0;
+  }
+  .table--stack td.table-actions { justify-content: flex-end; }
+  .table--stack td.table-actions::before { content: none; }
+}
+
 .filter-bar { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
 .filter-controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
 .filter-field { flex: 0 1 180px; }
@@ -167,27 +204,45 @@ label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color:
 }
 .chip.is-active { background: var(--accent); color: var(--accent-contrast); border-color: var(--accent); }
 
-.rate-list { display: flex; flex-direction: column; gap: 8px; max-height: 360px; overflow-y: auto; }
+.rate-list { display: flex; flex-direction: column; gap: 8px; max-height: min(56vh, 520px); overflow-y: auto; }
 .rate-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 8px 10px;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 12px;
   border: 1px solid var(--border);
-  border-radius: 8px;
-  flex-wrap: wrap;
+  border-radius: var(--radius);
 }
-.rate-item-main { display: flex; flex-direction: column; gap: 2px; min-width: 140px; }
+.rate-item-main { display: flex; flex-direction: column; gap: 2px; }
+.rate-item-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .rate-item-tags { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .rate-pill { background: var(--accent); color: var(--accent-contrast); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 600; }
 .tag { background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; font-size: 11px; color: var(--muted); }
 .tag-good { background: color-mix(in srgb, var(--positive) 18%, transparent); border-color: var(--positive); color: var(--positive); }
 
 .rate-search { margin-bottom: 10px; }
-.rate-item-metrics { display: flex; gap: 14px; flex-wrap: wrap; }
-.rate-metric { display: flex; flex-direction: column; align-items: center; min-width: 52px; }
+.rate-item-metrics { display: flex; gap: 18px; }
+.rate-metric { display: flex; flex-direction: column; align-items: flex-start; min-width: 52px; }
 .rate-metric-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+}
+.collapsible-header h2 { margin: 0; }
+.collapsible-chevron { color: var(--muted); font-size: 13px; transition: transform 0.15s; flex-shrink: 0; }
+.collapsible-chevron.is-open { transform: rotate(180deg); }
+.collapsible-body { margin-top: 14px; }
 .rate-metric-value { font-size: 14px; font-weight: 600; }
 .rate-item-metrics .rate-metric:first-child .rate-metric-value { color: var(--accent); }
 

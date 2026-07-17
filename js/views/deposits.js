@@ -12,6 +12,7 @@ import {
 
 const DAY_MS = 86400000;
 let selectedDepositId = null;
+let ratesExpanded = false;
 let rateFilterCurrency = "BYN";
 let rateSortKey = "rate"; // "rate" | "term"
 let taxFreeOnly = false;
@@ -57,6 +58,14 @@ export function depositsAggregateSeries(deposits) {
     series.push({ id: currency, label: currency, points });
   }
   return series;
+}
+
+function collapsibleHeader({ title, isOpen, onToggle }) {
+  return el(
+    "button",
+    { type: "button", class: "collapsible-header", onClick: onToggle },
+    [el("h2", {}, title), el("span", { class: "collapsible-chevron" + (isOpen ? " is-open" : "") }, "▾")]
+  );
 }
 
 export function renderDeposits(container, ctx) {
@@ -124,142 +133,27 @@ export function renderDeposits(container, ctx) {
 
   const formCard = el("div", { class: "card" }, [el("h2", {}, "Добавить вклад"), form]);
 
-  // --- Bank rates panel ---
-  const ratesCard = el("div", { class: "card" }, [el("h2", {}, "Ставки банков (Беларусь)")]);
-  if (!bankRates) {
-    ratesCard.appendChild(
-      el("p", { class: "muted" }, "Данные не найдены. Запустите scripts/parse_rates.py (см. README), чтобы подтянуть актуальные ставки.")
-    );
+  // --- Totals summary ---
+  const totalsCard = el("div", { class: "card" }, [el("h2", {}, "Итого по вкладам")]);
+  if (!state.deposits.length) {
+    totalsCard.appendChild(el("p", { class: "muted" }, "Пока нет вкладов."));
   } else {
-    const tabs = el(
-      "div",
-      { class: "chip-row" },
-      ["BYN", "USD", "EUR"].map((cur) =>
-        el(
-          "button",
-          {
-            type: "button",
-            class: "chip" + (cur === rateFilterCurrency ? " is-active" : ""),
-            onClick: () => {
-              rateFilterCurrency = cur;
-              ctx.rerender();
-            },
-          },
-          cur
-        )
-      )
-    );
-    ratesCard.appendChild(tabs);
-
-    const sortRow = el("div", { class: "chip-row" }, [
-      el(
-        "button",
-        {
-          type: "button",
-          class: "chip" + (rateSortKey === "rate" ? " is-active" : ""),
-          onClick: () => { rateSortKey = "rate"; ctx.rerender(); },
-        },
-        "По ставке"
-      ),
-      el(
-        "button",
-        {
-          type: "button",
-          class: "chip" + (rateSortKey === "term" ? " is-active" : ""),
-          onClick: () => { rateSortKey = "term"; ctx.rerender(); },
-        },
-        "По сроку"
-      ),
-      el(
-        "button",
-        {
-          type: "button",
-          class: "chip" + (taxFreeOnly ? " is-active" : ""),
-          onClick: () => { taxFreeOnly = !taxFreeOnly; ctx.rerender(); },
-        },
-        `Без налога (от ${TAX_FREE_MIN_MONTHS[rateFilterCurrency]} мес.)`
-      ),
-    ]);
-    ratesCard.appendChild(sortRow);
-
-    const searchInput = el("input", {
-      class: "input",
-      type: "search",
-      placeholder: "Поиск по банку или названию вклада…",
-      value: rateSearch,
-      onInput: (e) => {
-        rateSearch = e.target.value;
-        ctx.rerender();
-      },
-    });
-    ratesCard.appendChild(el("div", { class: "rate-search" }, [searchInput]));
-
-    const byCurrency = bankRates.offers.filter((o) => o.currency === rateFilterCurrency);
-    let offers = byCurrency;
-    if (taxFreeOnly) offers = offers.filter(isTaxFree);
-    if (rateSearch.trim()) {
-      const q = rateSearch.trim().toLowerCase();
-      offers = offers.filter((o) => `${o.bank} ${o.product}`.toLowerCase().includes(q));
+    const byCurrency = new Map();
+    for (const d of state.deposits) {
+      if (!byCurrency.has(d.currency)) byCurrency.set(d.currency, { principal: 0, current: 0 });
+      const agg = byCurrency.get(d.currency);
+      agg.principal += d.principal;
+      agg.current += depositCurrentValue(d);
     }
-    offers = offers.sort((a, b) =>
-      rateSortKey === "term" ? (b.termMonths || 0) - (a.termMonths || 0) : b.rate - a.rate
-    );
-
-    ratesCard.appendChild(
-      el(
-        "p",
-        { class: "muted small" },
-        `Источник: myfin.by · обновлено ${formatDate(bankRates.updatedAt)} · показано ${offers.length} из ${byCurrency.length}`
-      )
-    );
-
-    const list = el("div", { class: "rate-list" });
-    if (!offers.length) {
-      list.appendChild(el("p", { class: "muted" }, "Нет предложений по заданным фильтрам."));
-    }
-    for (const offer of offers) {
-      list.appendChild(
-        el("div", { class: "rate-item" }, [
-          el("div", { class: "rate-item-main" }, [
-            el("strong", {}, offer.bank),
-            el("span", { class: "muted small" }, offer.product),
-          ]),
-          el("div", { class: "rate-item-metrics" }, [
-            el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Ставка"), el("span", { class: "rate-metric-value" }, `${offer.rate}%`)]),
-            offer.yieldTotal != null
-              ? el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Доход"), el("span", { class: "rate-metric-value" }, `${offer.yieldTotal}%`)])
-              : null,
-            offer.termMonths
-              ? el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Срок"), el("span", { class: "rate-metric-value" }, `${offer.termMonths} мес.`)])
-              : null,
-          ]),
-          el("div", { class: "rate-item-tags" }, [
-            offer.capitalization ? el("span", { class: "tag" }, "Капитализация") : null,
-            isTaxFree(offer) ? el("span", { class: "tag tag-good" }, "Без налога") : null,
-          ]),
-          el(
-            "button",
-            {
-              type: "button",
-              class: "btn btn-small",
-              onClick: () => {
-                form.bank.value = offer.bank;
-                form.product.value = offer.product;
-                form.currency.value = offer.currency;
-                form.rate.value = offer.rate;
-                if (offer.termMonths) form.termMonths.value = offer.termMonths;
-                capCheckbox.checked = !!offer.capitalization;
-                capFreqSelect.disabled = !capCheckbox.checked;
-                form.scrollIntoView({ behavior: "smooth", block: "start" });
-                showToast("Поля формы заполнены данными банка");
-              },
-            },
-            "Использовать"
-          ),
+    for (const [currency, agg] of byCurrency) {
+      const gain = agg.current - agg.principal;
+      totalsCard.appendChild(
+        el("div", { class: "stat" }, [
+          el("span", { class: "stat-value" }, formatMoney(agg.current, currency)),
+          el("span", { class: "muted small" }, `${currency} · вложено ${formatMoney(agg.principal, currency)} · ${gain >= 0 ? "+" : ""}${formatMoney(gain, currency)}`),
         ])
       );
     }
-    ratesCard.appendChild(list);
   }
 
   // --- Table ---
@@ -283,79 +177,79 @@ export function renderDeposits(container, ctx) {
     if (!filtered.length) {
       tableCard.appendChild(el("p", { class: "muted" }, "Нет вкладов по заданным фильтрам."));
     } else {
-    const accessors = {
-      bank: (d) => d.bank.toLowerCase(),
-      currency: (d) => d.currency,
-      principal: (d) => d.principal,
-      rate: (d) => d.rate,
-      termMonths: (d) => d.termMonths,
-      startDate: (d) => new Date(d.startDate).getTime(),
-      current: (d) => depositCurrentValue(d),
-      final: (d) => depositProjectedFinalValue(d),
-    };
-    const sorted = sortRows(filtered, tableSort, accessors);
-    const table = el("table", { class: "table" }, [
-      el(
-        "thead",
-        {},
-        el("tr", {}, [
-          sortableHeader("Банк", "bank", tableSort, ctx.rerender),
-          sortableHeader("Валюта", "currency", tableSort, ctx.rerender),
-          sortableHeader("Сумма", "principal", tableSort, ctx.rerender),
-          sortableHeader("Ставка", "rate", tableSort, ctx.rerender),
-          sortableHeader("Срок", "termMonths", tableSort, ctx.rerender),
-          sortableHeader("Текущая стоимость", "current", tableSort, ctx.rerender),
-          sortableHeader("Итог по сроку", "final", tableSort, ctx.rerender),
-          el("th", {}, ""),
-        ])
-      ),
-    ]);
-    const tbody = el("tbody");
-    for (const d of sorted) {
-      const current = depositCurrentValue(d);
-      const final = depositProjectedFinalValue(d);
-      const row = el("tr", { class: d.id === selectedDepositId ? "is-selected" : "" }, [
-        el("td", {}, [el("strong", {}, d.bank), d.product ? el("div", { class: "muted small" }, d.product) : null]),
-        el("td", {}, d.currency),
-        el("td", {}, formatMoney(d.principal, d.currency)),
-        el("td", {}, `${d.rate}%${d.capitalization ? " (капит.)" : ""}`),
-        el("td", {}, `${d.termMonths} мес. до ${formatDate(depositTermEndDate(d))}`),
-        el("td", {}, formatMoney(current, d.currency)),
-        el("td", {}, formatMoney(final, d.currency)),
-        el("td", { class: "table-actions" }, [
-          el(
-            "button",
-            {
-              class: "btn btn-small",
-              type: "button",
-              onClick: () => {
-                selectedDepositId = selectedDepositId === d.id ? null : d.id;
-                ctx.rerender();
-              },
-            },
-            selectedDepositId === d.id ? "Скрыть график" : "График"
-          ),
-          el(
-            "button",
-            {
-              class: "btn btn-small btn-danger",
-              type: "button",
-              onClick: () => {
-                if (!confirmDialog(`Удалить вклад «${d.bank}»?`)) return;
-                state.deposits = state.deposits.filter((x) => x.id !== d.id);
-                if (selectedDepositId === d.id) selectedDepositId = null;
-                persist();
-                ctx.rerender();
-              },
-            },
-            "Удалить"
-          ),
-        ]),
+      const accessors = {
+        bank: (d) => d.bank.toLowerCase(),
+        currency: (d) => d.currency,
+        principal: (d) => d.principal,
+        rate: (d) => d.rate,
+        termMonths: (d) => d.termMonths,
+        startDate: (d) => new Date(d.startDate).getTime(),
+        current: (d) => depositCurrentValue(d),
+        final: (d) => depositProjectedFinalValue(d),
+      };
+      const sorted = sortRows(filtered, tableSort, accessors);
+      const table = el("table", { class: "table table--stack" }, [
+        el(
+          "thead",
+          {},
+          el("tr", {}, [
+            sortableHeader("Банк", "bank", tableSort, ctx.rerender),
+            sortableHeader("Валюта", "currency", tableSort, ctx.rerender),
+            sortableHeader("Сумма", "principal", tableSort, ctx.rerender),
+            sortableHeader("Ставка", "rate", tableSort, ctx.rerender),
+            sortableHeader("Срок", "termMonths", tableSort, ctx.rerender),
+            sortableHeader("Текущая стоимость", "current", tableSort, ctx.rerender),
+            sortableHeader("Итог по сроку", "final", tableSort, ctx.rerender),
+            el("th", {}, ""),
+          ])
+        ),
       ]);
-      tbody.appendChild(row);
-    }
-    table.appendChild(tbody);
-    tableCard.appendChild(table);
+      const tbody = el("tbody");
+      for (const d of sorted) {
+        const current = depositCurrentValue(d);
+        const final = depositProjectedFinalValue(d);
+        const row = el("tr", { class: d.id === selectedDepositId ? "is-selected" : "" }, [
+          el("td", { "data-label": "Банк" }, [el("strong", {}, d.bank), d.product ? el("div", { class: "muted small" }, d.product) : null]),
+          el("td", { "data-label": "Валюта" }, d.currency),
+          el("td", { "data-label": "Сумма" }, formatMoney(d.principal, d.currency)),
+          el("td", { "data-label": "Ставка" }, `${d.rate}%${d.capitalization ? " (капит.)" : ""}`),
+          el("td", { "data-label": "Срок" }, `${d.termMonths} мес. до ${formatDate(depositTermEndDate(d))}`),
+          el("td", { "data-label": "Текущая стоимость" }, formatMoney(current, d.currency)),
+          el("td", { "data-label": "Итог по сроку" }, formatMoney(final, d.currency)),
+          el("td", { class: "table-actions" }, [
+            el(
+              "button",
+              {
+                class: "btn btn-small",
+                type: "button",
+                onClick: () => {
+                  selectedDepositId = selectedDepositId === d.id ? null : d.id;
+                  ctx.rerender();
+                },
+              },
+              selectedDepositId === d.id ? "Скрыть график" : "График"
+            ),
+            el(
+              "button",
+              {
+                class: "btn btn-small btn-danger",
+                type: "button",
+                onClick: () => {
+                  if (!confirmDialog(`Удалить вклад «${d.bank}»?`)) return;
+                  state.deposits = state.deposits.filter((x) => x.id !== d.id);
+                  if (selectedDepositId === d.id) selectedDepositId = null;
+                  persist();
+                  ctx.rerender();
+                },
+              },
+              "Удалить"
+            ),
+          ]),
+        ]);
+        tbody.appendChild(row);
+      }
+      table.appendChild(tbody);
+      tableCard.appendChild(el("div", { class: "table-scroll" }, [table]));
     }
   }
 
@@ -380,5 +274,147 @@ export function renderDeposits(container, ctx) {
     chart.setSeries(depositsAggregateSeries(state.deposits));
   }
 
-  container.appendChild(el("div", { class: "view-grid" }, [formCard, ratesCard, tableCard, chartCard]));
+  // --- Bank rates panel (reference data, collapsed by default so it doesn't
+  // bury the user's own deposits below a 100+ item list) ---
+  const ratesCard = el("div", { class: "card span-2" }, [
+    collapsibleHeader({
+      title: "Ставки банков (Беларусь)",
+      isOpen: ratesExpanded,
+      onToggle: () => {
+        ratesExpanded = !ratesExpanded;
+        ctx.rerender();
+      },
+    }),
+  ]);
+
+  if (ratesExpanded) {
+    const body = el("div", { class: "collapsible-body" });
+
+    if (!bankRates) {
+      body.appendChild(
+        el("p", { class: "muted" }, "Данные не найдены. Запустите scripts/parse_rates.py (см. README), чтобы подтянуть актуальные ставки.")
+      );
+    } else {
+      const tabs = el(
+        "div",
+        { class: "chip-row" },
+        ["BYN", "USD", "EUR"].map((cur) =>
+          el(
+            "button",
+            {
+              type: "button",
+              class: "chip" + (cur === rateFilterCurrency ? " is-active" : ""),
+              onClick: () => {
+                rateFilterCurrency = cur;
+                ctx.rerender();
+              },
+            },
+            cur
+          )
+        )
+      );
+      body.appendChild(tabs);
+
+      const sortRow = el("div", { class: "chip-row" }, [
+        el(
+          "button",
+          { type: "button", class: "chip" + (rateSortKey === "rate" ? " is-active" : ""), onClick: () => { rateSortKey = "rate"; ctx.rerender(); } },
+          "По ставке"
+        ),
+        el(
+          "button",
+          { type: "button", class: "chip" + (rateSortKey === "term" ? " is-active" : ""), onClick: () => { rateSortKey = "term"; ctx.rerender(); } },
+          "По сроку"
+        ),
+        el(
+          "button",
+          { type: "button", class: "chip" + (taxFreeOnly ? " is-active" : ""), onClick: () => { taxFreeOnly = !taxFreeOnly; ctx.rerender(); } },
+          `Без налога (от ${TAX_FREE_MIN_MONTHS[rateFilterCurrency]} мес.)`
+        ),
+      ]);
+      body.appendChild(sortRow);
+
+      const searchInput = el("input", {
+        class: "input",
+        type: "search",
+        placeholder: "Поиск по банку или названию вклада…",
+        value: rateSearch,
+        onInput: (e) => {
+          rateSearch = e.target.value;
+          ctx.rerender();
+        },
+      });
+      body.appendChild(el("div", { class: "rate-search" }, [searchInput]));
+
+      const byCurrency = bankRates.offers.filter((o) => o.currency === rateFilterCurrency);
+      let offers = byCurrency;
+      if (taxFreeOnly) offers = offers.filter(isTaxFree);
+      if (rateSearch.trim()) {
+        const q = rateSearch.trim().toLowerCase();
+        offers = offers.filter((o) => `${o.bank} ${o.product}`.toLowerCase().includes(q));
+      }
+      offers = offers.sort((a, b) => (rateSortKey === "term" ? (b.termMonths || 0) - (a.termMonths || 0) : b.rate - a.rate));
+
+      body.appendChild(
+        el(
+          "p",
+          { class: "muted small" },
+          `Источник: myfin.by · обновлено ${formatDate(bankRates.updatedAt)} · показано ${offers.length} из ${byCurrency.length}`
+        )
+      );
+
+      const list = el("div", { class: "rate-list" });
+      if (!offers.length) {
+        list.appendChild(el("p", { class: "muted" }, "Нет предложений по заданным фильтрам."));
+      }
+      for (const offer of offers) {
+        list.appendChild(
+          el("div", { class: "rate-item" }, [
+            el("div", { class: "rate-item-main" }, [
+              el("strong", {}, offer.bank),
+              el("span", { class: "muted small" }, offer.product),
+            ]),
+            el("div", { class: "rate-item-metrics" }, [
+              el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Ставка"), el("span", { class: "rate-metric-value" }, `${offer.rate}%`)]),
+              offer.yieldTotal != null
+                ? el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Доход"), el("span", { class: "rate-metric-value" }, `${offer.yieldTotal}%`)])
+                : null,
+              offer.termMonths
+                ? el("div", { class: "rate-metric" }, [el("span", { class: "rate-metric-label" }, "Срок"), el("span", { class: "rate-metric-value" }, `${offer.termMonths} мес.`)])
+                : null,
+            ]),
+            el("div", { class: "rate-item-footer" }, [
+              el("div", { class: "rate-item-tags" }, [
+                offer.capitalization ? el("span", { class: "tag" }, "Капитализация") : null,
+                isTaxFree(offer) ? el("span", { class: "tag tag-good" }, "Без налога") : null,
+              ]),
+              el(
+                "button",
+                {
+                  type: "button",
+                  class: "btn btn-small",
+                  onClick: () => {
+                    form.bank.value = offer.bank;
+                    form.product.value = offer.product;
+                    form.currency.value = offer.currency;
+                    form.rate.value = offer.rate;
+                    if (offer.termMonths) form.termMonths.value = offer.termMonths;
+                    capCheckbox.checked = !!offer.capitalization;
+                    capFreqSelect.disabled = !capCheckbox.checked;
+                    form.scrollIntoView({ behavior: "smooth", block: "start" });
+                    showToast("Поля формы заполнены данными банка");
+                  },
+                },
+                "Использовать"
+              ),
+            ]),
+          ])
+        );
+      }
+      body.appendChild(list);
+    }
+    ratesCard.appendChild(body);
+  }
+
+  container.appendChild(el("div", { class: "view-grid" }, [formCard, totalsCard, tableCard, chartCard, ratesCard]));
 }

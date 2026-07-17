@@ -117,7 +117,7 @@ export function renderSalary(container, ctx) {
         );
       }
       table.appendChild(tbody);
-      tableCard.appendChild(table);
+      tableCard.appendChild(el("div", { class: "table-scroll" }, [table]));
     }
   }
 
