@@ -1,7 +1,7 @@
 // App-shell service worker: makes the app installable and usable offline.
 // Bump CACHE_VERSION whenever any precached file changes so clients pick up
 // the new version instead of serving a stale cache forever.
-const CACHE_VERSION = "v6";
+const CACHE_VERSION = "v7";
 const CACHE_NAME = `finance-app-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -28,9 +28,25 @@ const PRECACHE_URLS = [
   "./icons/apple-touch-icon.png",
 ];
 
+// A plain fetch(event.request) can be satisfied straight from the browser's
+// own HTTP cache, which sits *underneath* our Cache Storage layer - so even
+// though we thought we were fetching fresh, we could get a stale response
+// and cache that. Every network fetch this worker makes explicitly bypasses
+// it so "refresh the cache" actually means the network, not another cache.
+function fetchFresh(url) {
+  return fetch(url, { cache: "reload" });
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS)).then(() => self.skipWaiting())
+    caches
+      .open(CACHE_NAME)
+      .then((cache) =>
+        Promise.all(
+          PRECACHE_URLS.map((url) => fetchFresh(url).then((res) => cache.put(url, res)))
+        )
+      )
+      .then(() => self.skipWaiting())
   );
 });
 
@@ -50,7 +66,7 @@ self.addEventListener("fetch", (event) => {
   // Bank rates change periodically - prefer a fresh copy, fall back to cache offline.
   if (url.pathname.endsWith("/data/bank-rates.json")) {
     event.respondWith(
-      fetch(event.request)
+      fetchFresh(event.request.url)
         .then((res) => {
           const clone = res.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
@@ -61,10 +77,11 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // App shell: cache-first, refresh the cache in the background.
+  // App shell: cache-first for instant loads, refresh the cache from a real
+  // network request in the background so the *next* load picks up changes.
   event.respondWith(
     caches.match(event.request).then((cached) => {
-      const network = fetch(event.request)
+      const network = fetchFresh(event.request.url)
         .then((res) => {
           const clone = res.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
