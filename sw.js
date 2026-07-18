@@ -1,7 +1,7 @@
 // App-shell service worker: makes the app installable and usable offline.
 // Bump CACHE_VERSION whenever any precached file changes so clients pick up
 // the new version instead of serving a stale cache forever.
-const CACHE_VERSION = "v8";
+const CACHE_VERSION = "v9";
 const CACHE_NAME = `finance-app-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -63,8 +63,8 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (event.request.method !== "GET" || url.origin !== self.location.origin) return;
 
-  // Bank rates change periodically - prefer a fresh copy, fall back to cache offline.
-  if (url.pathname.endsWith("/data/bank-rates.json")) {
+  // Bank rates (and their history) change periodically - prefer a fresh copy, fall back to cache offline.
+  if (url.pathname.endsWith("/data/bank-rates.json") || url.pathname.endsWith("/data/bank-rates-history.json")) {
     event.respondWith(
       fetchFresh(event.request.url)
         .then((res) => {

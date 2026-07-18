@@ -34,6 +34,7 @@ SOURCES = {
 }
 
 OUT_PATH = Path(__file__).resolve().parent.parent / "data" / "bank-rates.json"
+HISTORY_PATH = Path(__file__).resolve().parent.parent / "data" / "bank-rates-history.json"
 
 TERM_UNIT_DAYS = {"дн": 1, "мес": 30, "год": 365, "лет": 365}
 
@@ -164,6 +165,41 @@ def fetch_currency(currency, url):
     return offers
 
 
+def summarize_by_currency(offers):
+    """One max/avg/min rate figure per currency - not per-bank detail, so the
+    history file stays small (a few hundred bytes/day) as it accumulates."""
+    by_currency = {}
+    for offer in offers:
+        by_currency.setdefault(offer["currency"], []).append(offer["rate"])
+    return {
+        currency: {
+            "maxRate": round(max(rates), 2),
+            "avgRate": round(sum(rates) / len(rates), 2),
+            "minRate": round(min(rates), 2),
+            "count": len(rates),
+        }
+        for currency, rates in by_currency.items()
+    }
+
+
+def update_history(offers):
+    """Appends today's per-currency rate summary to bank-rates-history.json so
+    the app can chart how rates move over time. Re-running the script the same
+    day replaces that day's entry instead of duplicating it."""
+    today = datetime.now(timezone.utc).date().isoformat()
+    history = []
+    if HISTORY_PATH.exists():
+        try:
+            history = json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            history = []
+    history = [entry for entry in history if entry.get("date") != today]
+    history.append({"date": today, **summarize_by_currency(offers)})
+    history.sort(key=lambda entry: entry["date"])
+    HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Updated history: {len(history)} day(s) recorded in {HISTORY_PATH}")
+
+
 def main():
     all_offers = []
     for currency, url in SOURCES.items():
@@ -187,6 +223,8 @@ def main():
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {len(all_offers)} offers to {OUT_PATH}")
+
+    update_history(all_offers)
 
 
 if __name__ == "__main__":

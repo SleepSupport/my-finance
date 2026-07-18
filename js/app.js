@@ -9,6 +9,7 @@ import { renderOverview } from "./views/overview.js";
 
 const state = loadState();
 let bankRates = null;
+let rateHistory = null;
 let activeTab = "overview";
 let activeCharts = [];
 
@@ -57,6 +58,7 @@ function render() {
     registerChart: (chart) => activeCharts.push(chart),
     currencies: state.currencies,
     bankRates,
+    rateHistory,
   };
 
   const current = TABS.find((t) => t.id === activeTab);
@@ -108,6 +110,12 @@ async function loadBankRates() {
     if (res.ok) bankRates = await res.json();
   } catch {
     bankRates = null;
+  }
+  try {
+    const res = await fetch("data/bank-rates-history.json", { cache: "no-store" });
+    if (res.ok) rateHistory = await res.json();
+  } catch {
+    rateHistory = null;
   }
 }
 

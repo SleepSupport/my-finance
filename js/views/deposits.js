@@ -69,7 +69,7 @@ function collapsibleHeader({ title, isOpen, onToggle }) {
 }
 
 export function renderDeposits(container, ctx) {
-  const { state, persist, registerChart, currencies, bankRates } = ctx;
+  const { state, persist, registerChart, currencies, bankRates, rateHistory } = ctx;
 
   const form = el("form", { class: "form", id: "deposit-form" }, [
     el("div", { class: "form-row" }, [
@@ -314,6 +314,34 @@ export function renderDeposits(container, ctx) {
         )
       );
       body.appendChild(tabs);
+
+      const histPoints = (rateHistory || [])
+        .filter((entry) => entry[rateFilterCurrency])
+        .map((entry) => ({
+          x: new Date(entry.date).getTime(),
+          max: entry[rateFilterCurrency].maxRate,
+          avg: entry[rateFilterCurrency].avgRate,
+        }));
+      if (histPoints.length) {
+        body.appendChild(el("h3", { class: "subheading" }, `История ставок, ${rateFilterCurrency}`));
+        if (histPoints.length === 1) {
+          body.appendChild(
+            el("p", { class: "muted small" }, "Пока одна точка — данные накапливаются раз в день, график наполнится со временем.")
+          );
+        }
+        const historyChartHost = el("div");
+        body.appendChild(historyChartHost);
+        const historyChart = new LineChart(historyChartHost, {
+          formatY: (v) => `${v.toFixed(1)}%`,
+          formatX: (t) => formatDate(t),
+          emptyMessage: "Пока недостаточно данных",
+        });
+        registerChart(historyChart);
+        historyChart.setSeries([
+          { id: "max", label: "Макс. ставка", points: histPoints.map((p) => ({ x: p.x, y: p.max })) },
+          { id: "avg", label: "Средняя ставка", points: histPoints.map((p) => ({ x: p.x, y: p.avg })) },
+        ]);
+      }
 
       const sortRow = el("div", { class: "chip-row" }, [
         el(
