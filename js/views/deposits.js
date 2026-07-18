@@ -12,7 +12,7 @@ import {
 
 const DAY_MS = 86400000;
 let selectedDepositId = null;
-let ratesExpanded = false;
+let ratesExpanded = true;
 let rateFilterCurrency = "BYN";
 let rateSortKey = "rate"; // "rate" | "term"
 let taxFreeOnly = false;
