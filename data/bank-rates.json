@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T07:27:55.206877+00:00",
+  "updatedAt": "2026-07-20T08:06:41.195072+00:00",
   "source": "myfin.by",
   "count": 202,
   "offers": [
@@ -524,6 +524,22 @@
       "url": "https://myfin.by/bank/reshenie/vklady/1488-online-reshenie?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Нео Банк Азия",
+      "bankSlug": "btabank",
+      "product": "Нео Безотзывный Online",
+      "currency": "BYN",
+      "rate": 5.0,
+      "termMonths": 1,
+      "yieldTotal": 0.37,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/btabank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Паритетбанк",
       "bankSlug": "paritetbank",
       "product": "Безотзывный Online",
@@ -633,22 +649,6 @@
       "url": "https://myfin.by/bank/bps-sberbank/vklady/2175-sberegaj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Нео Банк Азия",
-      "bankSlug": "btabank",
-      "product": "Нео Безотзывный Online",
-      "currency": "BYN",
-      "rate": 5.0,
-      "termMonths": 1,
-      "yieldTotal": 0.37,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/btabank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Альфа Банк",
       "bankSlug": "alfabank",
       "product": "Альфа Гранд (безотзывный)",
@@ -664,23 +664,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/alfabank/vklady/1742-alfa-grand?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Нео Банк Азия",
-      "bankSlug": "btabank",
-      "product": "Нео Безотзывный",
-      "currency": "BYN",
-      "rate": 4.8,
-      "termMonths": 1,
-      "yieldTotal": 0.35,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Пролонгация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/btabank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
@@ -787,6 +770,23 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2170-nadeznyj-klad-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Нео Банк Азия",
+      "bankSlug": "btabank",
+      "product": "Нео Безотзывный",
+      "currency": "BYN",
+      "rate": 4.8,
+      "termMonths": 1,
+      "yieldTotal": 0.35,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/btabank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "СтатусБанк",
