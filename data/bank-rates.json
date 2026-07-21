@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-20T08:06:41.195072+00:00",
+  "updatedAt": "2026-07-21T07:33:25.853794+00:00",
   "source": "myfin.by",
-  "count": 202,
+  "count": 201,
   "offers": [
     {
       "bank": "Альфа Банк",
@@ -253,9 +253,9 @@
       "bankSlug": "alfabank",
       "product": "Альфа Вклад безотзывный в BYN",
       "currency": "BYN",
-      "rate": 13.3,
+      "rate": 13.0,
       "termMonths": 18,
-      "yieldTotal": 19.95,
+      "yieldTotal": 19.5,
       "capitalization": false,
       "tags": [
         "Пополнение",
@@ -352,23 +352,6 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/belarusbank/vklady/1816-uspeshnyyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Альфа Банк",
-      "bankSlug": "alfabank",
-      "product": "Альфа Вклад (безотзывный) в BYN с эффективной ставкой",
-      "currency": "BYN",
-      "rate": 5.0,
-      "termMonths": 2,
-      "yieldTotal": 0.63,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Пролонгация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/alfabank/vklady/1732-alfa-vklad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белинвестбанк",
@@ -476,6 +459,23 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/dabrabyt/vklady/1789-shchodry-onlayin?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Альфа Банк",
+      "bankSlug": "alfabank",
+      "product": "Альфа Вклад (безотзывный) в BYN с эффективной ставкой",
+      "currency": "BYN",
+      "rate": 5.0,
+      "termMonths": 2,
+      "yieldTotal": 0.63,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/alfabank/vklady/1732-alfa-vklad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
@@ -710,21 +710,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bank-vtb/vklady/2031-moi-usloviya-onlayin-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Альфа Банк",
-      "bankSlug": "alfabank",
-      "product": "Альфа Парус (безотзывный)",
-      "currency": "BYN",
-      "rate": 12.8,
-      "termMonths": 15,
-      "yieldTotal": 17.25,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/alfabank/vklady/2027-alfa-parus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
