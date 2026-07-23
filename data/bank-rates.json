@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T07:35:02.362606+00:00",
+  "updatedAt": "2026-07-23T07:33:52.446520+00:00",
   "source": "myfin.by",
   "count": 201,
   "offers": [
@@ -385,21 +385,6 @@
       "url": "https://myfin.by/bank/belinvestbank/vklady/1977-lichnyyi-vybor-bezotzyvnoyi-v-byn-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
-      "bankSlug": "mtbank",
-      "product": "МТБелки Online (безотзывный) с фиксированной ставкой",
-      "currency": "BYN",
-      "rate": 9.0,
-      "termMonths": 12,
-      "yieldTotal": 9.38,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "ТК Банк",
       "bankSlug": "tkbank",
       "product": "Безотзывный (капитализация)",
@@ -444,6 +429,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/2173-versina-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "МТБанк",
+      "bankSlug": "mtbank",
+      "product": "МТБелки Online (безотзывный) с фиксированной ставкой",
+      "currency": "BYN",
+      "rate": 9.0,
+      "termMonths": 12,
+      "yieldTotal": 9.38,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
@@ -696,6 +696,21 @@
       "url": "https://myfin.by/bank/bank-vtb/vklady/2128-v-teme?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "МТБанк",
+      "bankSlug": "mtbank",
+      "product": "МТБелки (безотзывный) от 1 года",
+      "currency": "BYN",
+      "rate": 8.0,
+      "termMonths": 12,
+      "yieldTotal": 8.3,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1906-mtbelki-fiks?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
       "product": "Мои условия онлайн (безотзывный)",
@@ -865,21 +880,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/priorbank/vklady/1641-yelektronnyyi-depozit-vyshenet-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "МТБанк",
-      "bankSlug": "mtbank",
-      "product": "МТБелки (безотзывный) от 1 года",
-      "currency": "BYN",
-      "rate": 8.0,
-      "termMonths": 12,
-      "yieldTotal": 8.3,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1906-mtbelki-fiks?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Решение",
@@ -1344,24 +1344,6 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2157-rrb-byn-online-6?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Online-стратегия",
-      "currency": "BYN",
-      "rate": 1.8,
-      "termMonths": 1,
-      "yieldTotal": 0.13,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Досрочное снятие",
-        "Пролонгация",
-        "Еще"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1817-online-strategiya?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "БНБ-Банк",
       "bankSlug": "bnbank",
       "product": "Безотзывный вклад Такса в BYN на 35 дней",
@@ -1405,6 +1387,24 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2186-na-3-mesaca-vygodnyj-onlajn-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Online-стратегия",
+      "currency": "BYN",
+      "rate": 6.0,
+      "termMonths": 1,
+      "yieldTotal": 0.44,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Досрочное снятие",
+        "Пролонгация",
+        "Еще"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1817-online-strategiya?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
