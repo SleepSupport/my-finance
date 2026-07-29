@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T07:39:57.745245+00:00",
+  "updatedAt": "2026-07-29T07:44:25.040628+00:00",
   "source": "myfin.by",
   "count": 201,
   "offers": [
@@ -589,6 +589,36 @@
       "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Online-решение new",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 2,
+      "yieldTotal": 0.89,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1553-online-reshenie-new?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Почтенный",
+      "currency": "BYN",
+      "rate": 10.1,
+      "termMonths": 5,
+      "yieldTotal": 3.24,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
       "product": "Капитальный онлайн",
@@ -852,21 +882,6 @@
       "url": "https://myfin.by/bank/priorbank/vklady/790-pyatj-zvyozd-skala-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Online-решение new",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 2,
-      "yieldTotal": 0.89,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1553-online-reshenie-new?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Приорбанк",
       "bankSlug": "priorbank",
       "product": "Электронный депозит Выше.Net",
@@ -880,21 +895,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/priorbank/vklady/1641-yelektronnyyi-depozit-vyshenet-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Почтенный",
-      "currency": "BYN",
-      "rate": 10.1,
-      "termMonths": 5,
-      "yieldTotal": 3.24,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
