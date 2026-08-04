@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T08:30:29.473628+00:00",
+  "updatedAt": "2026-08-04T07:40:43.103981+00:00",
   "source": "myfin.by",
   "count": 202,
   "offers": [
@@ -207,6 +207,34 @@
       "url": "https://myfin.by/bank/bps-sberbank/vklady/1775-sohranyayi-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Цептер Банк",
+      "bankSlug": "zepterbank",
+      "product": "Цептер 1100 Онлайн",
+      "currency": "BYN",
+      "rate": 14.81,
+      "termMonths": 36,
+      "yieldTotal": 45.26,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/zepterbank/vklady/2168-cepter-1100-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Альтернатива плюс",
+      "currency": "BYN",
+      "rate": 13.3,
+      "termMonths": 12,
+      "yieldTotal": 14.56,
+      "capitalization": true,
+      "tags": [
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "БНБ-Банк",
       "bankSlug": "bnbank",
       "product": "Безотзывный вклад Такса в BYN (капитализация)",
@@ -236,34 +264,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bnbank/vklady/2131-bezotzyvnyyi-vklad-v-byn-protsenty-na-schet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Цептер Банк",
-      "bankSlug": "zepterbank",
-      "product": "Цептер 1100 Онлайн",
-      "currency": "BYN",
-      "rate": 14.81,
-      "termMonths": 36,
-      "yieldTotal": 45.26,
-      "capitalization": false,
-      "tags": [
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/zepterbank/vklady/2168-cepter-1100-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Альтернатива плюс",
-      "currency": "BYN",
-      "rate": 13.3,
-      "termMonths": 12,
-      "yieldTotal": 14.56,
-      "capitalization": true,
-      "tags": [
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
@@ -454,7 +454,7 @@
       "currency": "BYN",
       "rate": 9.0,
       "termMonths": 12,
-      "yieldTotal": 9.38,
+      "yieldTotal": 8.84,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -469,7 +469,7 @@
       "currency": "BYN",
       "rate": 12.0,
       "termMonths": 13,
-      "yieldTotal": 15.43,
+      "yieldTotal": 14.91,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -484,7 +484,7 @@
       "currency": "BYN",
       "rate": 12.0,
       "termMonths": 13,
-      "yieldTotal": 15.28,
+      "yieldTotal": 14.73,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -636,20 +636,6 @@
       "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк Дабрабыт",
-      "bankSlug": "dabrabyt",
-      "product": "Капитальный онлайн",
-      "currency": "BYN",
-      "rate": 13.32,
-      "termMonths": 13,
-      "yieldTotal": 14.43,
-      "capitalization": false,
-      "tags": [
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/dabrabyt/vklady/2122-kapitalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "СтатусБанк",
       "bankSlug": "statusbank",
       "product": "Статус - Надёжный на 13 месяцев",
@@ -695,35 +681,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2171-perspektiva-20-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "МТБанк",
-      "bankSlug": "mtbank",
-      "product": "МТБелки (безотзывный) от 1 года",
-      "currency": "BYN",
-      "rate": 8.0,
-      "termMonths": 12,
-      "yieldTotal": 8.3,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1906-mtbelki-fiks?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Дабрабыт",
-      "bankSlug": "dabrabyt",
-      "product": "Капитальный",
-      "currency": "BYN",
-      "rate": 13.2,
-      "termMonths": 13,
-      "yieldTotal": 14.3,
-      "capitalization": false,
-      "tags": [
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/dabrabyt/vklady/2123-kapitalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
@@ -913,6 +870,36 @@
       "url": "https://myfin.by/bank/technobank/vklady/2040-nadezhnyyi-klad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк Дабрабыт",
+      "bankSlug": "dabrabyt",
+      "product": "Хуткі онлайн",
+      "currency": "BYN",
+      "rate": 0.9,
+      "termMonths": 3,
+      "yieldTotal": 0.17,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/dabrabyt/vklady/1960-hutk-onlayin?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Дабрабыт",
+      "bankSlug": "dabrabyt",
+      "product": "Капитальный онлайн",
+      "currency": "BYN",
+      "rate": 12.9,
+      "termMonths": 13,
+      "yieldTotal": 13.97,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/dabrabyt/vklady/2122-kapitalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
       "product": "В теме Онлайн",
@@ -989,6 +976,21 @@
       "url": "https://myfin.by/bank/bvebank/vklady/1490-sberegatelnyyi-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "МТБанк",
+      "bankSlug": "mtbank",
+      "product": "МТБелки (безотзывный) от 1 года",
+      "currency": "BYN",
+      "rate": 7.5,
+      "termMonths": 12,
+      "yieldTotal": 7.76,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1906-mtbelki-fiks?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Альфа Банк",
       "bankSlug": "alfabank",
       "product": "Альфа Гранд (безотзывный)",
@@ -1029,7 +1031,6 @@
       "yieldTotal": 0.67,
       "capitalization": true,
       "tags": [
-        "Пополнение",
         "Капитализация",
         "Фиксированная ставка"
       ],
@@ -1049,6 +1050,36 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2043-skarb?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Дабрабыт",
+      "bankSlug": "dabrabyt",
+      "product": "Хуткі",
+      "currency": "BYN",
+      "rate": 0.7,
+      "termMonths": 3,
+      "yieldTotal": 0.13,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/dabrabyt/vklady/1880-hutk?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Дабрабыт",
+      "bankSlug": "dabrabyt",
+      "product": "Капитальный",
+      "currency": "BYN",
+      "rate": 12.75,
+      "termMonths": 13,
+      "yieldTotal": 13.81,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/dabrabyt/vklady/2123-kapitalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Альфа Банк",
@@ -1092,7 +1123,6 @@
       "yieldTotal": 0.66,
       "capitalization": true,
       "tags": [
-        "Пополнение",
         "Капитализация",
         "Фиксированная ставка"
       ],
@@ -1204,38 +1234,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/zepterbank/vklady/2107-tsepter-smart-lyuks?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Дабрабыт",
-      "bankSlug": "dabrabyt",
-      "product": "Хуткі онлайн",
-      "currency": "BYN",
-      "rate": 0.9,
-      "termMonths": 3,
-      "yieldTotal": 0.17,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/dabrabyt/vklady/1960-hutk-onlayin?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Дабрабыт",
-      "bankSlug": "dabrabyt",
-      "product": "Хуткі",
-      "currency": "BYN",
-      "rate": 0.7,
-      "termMonths": 3,
-      "yieldTotal": 0.13,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/dabrabyt/vklady/1880-hutk?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Беларусбанк",
@@ -2488,7 +2486,6 @@
       "yieldTotal": 0.14,
       "capitalization": true,
       "tags": [
-        "Пополнение",
         "Капитализация",
         "Фиксированная ставка"
       ],
