@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T07:40:43.103981+00:00",
+  "updatedAt": "2026-08-05T07:39:58.003317+00:00",
   "source": "myfin.by",
   "count": 202,
   "offers": [
@@ -104,9 +104,9 @@
       "bankSlug": "belarusbank",
       "product": "Дамский к@приз (безотзывный)",
       "currency": "BYN",
-      "rate": 12.35,
+      "rate": 12.1,
       "termMonths": 13,
-      "yieldTotal": 14.24,
+      "yieldTotal": 13.93,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -316,9 +316,9 @@
       "bankSlug": "belarusbank",
       "product": "Успешный Безотзывный Онл@йн",
       "currency": "BYN",
-      "rate": 12.35,
+      "rate": 12.1,
       "termMonths": 13,
-      "yieldTotal": 14.24,
+      "yieldTotal": 13.93,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -346,9 +346,9 @@
       "bankSlug": "belarusbank",
       "product": "Успешный Безотзывный",
       "currency": "BYN",
-      "rate": 12.3,
+      "rate": 12.05,
       "termMonths": 13,
-      "yieldTotal": 14.18,
+      "yieldTotal": 13.87,
       "capitalization": true,
       "tags": [
         "Капитализация"
@@ -448,21 +448,6 @@
       "url": "https://myfin.by/bank/reshenie/vklady/2173-versina-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
-      "bankSlug": "mtbank",
-      "product": "МТБелки Online (безотзывный) с фиксированной ставкой",
-      "currency": "BYN",
-      "rate": 9.0,
-      "termMonths": 12,
-      "yieldTotal": 8.84,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
       "product": "Шчодры онлайн",
@@ -476,6 +461,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/dabrabyt/vklady/1789-shchodry-onlayin?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "МТбанк",
+      "bankSlug": "mtbank",
+      "product": "МТБелки Online (безотзывный) с фиксированной ставкой",
+      "currency": "BYN",
+      "rate": 8.5,
+      "termMonths": 12,
+      "yieldTotal": 8.84,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
@@ -557,22 +557,6 @@
       "url": "https://myfin.by/bank/btabank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Безотзывный Online",
-      "currency": "BYN",
-      "rate": 4.1,
-      "termMonths": 1,
-      "yieldTotal": 0.3,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Решение",
       "bankSlug": "reshenie",
       "product": "Формула успеха",
@@ -587,23 +571,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/1424-formula-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Стабильный доход",
-      "currency": "BYN",
-      "rate": 4.0,
-      "termMonths": 1,
-      "yieldTotal": 0.3,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Решение",
@@ -855,6 +822,39 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2183-na-37-mesacev-vygodnyj-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Безотзывный Online",
+      "currency": "BYN",
+      "rate": 4.1,
+      "termMonths": 1,
+      "yieldTotal": 0.3,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Стабильный доход",
+      "currency": "BYN",
+      "rate": 4.0,
+      "termMonths": 1,
+      "yieldTotal": 0.3,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Технобанк",
       "bankSlug": "technobank",
       "product": "Надежный клад",
@@ -976,7 +976,7 @@
       "url": "https://myfin.by/bank/bvebank/vklady/1490-sberegatelnyyi-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки (безотзывный) от 1 года",
       "currency": "BYN",
@@ -1718,7 +1718,7 @@
       "url": "https://myfin.by/bank/alfabank/vklady/1348-aljfa-seyif?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки Online (безотзывный) с пролонгацией",
       "currency": "BYN",
@@ -1903,7 +1903,7 @@
       "url": "https://myfin.by/bank/technobank/vklady/1093-solo?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки (безотзывный) с пролонгацией",
       "currency": "BYN",
@@ -1949,7 +1949,7 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2155-rrb-byn-online-1?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки Online (отзывный)",
       "currency": "BYN",
@@ -2011,7 +2011,7 @@
       "url": "https://myfin.by/bank/paritetbank/vklady/2005-otzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки (отзывный)",
       "currency": "BYN",
@@ -2077,7 +2077,7 @@
       "url": "https://myfin.by/bank/belagroprombank/vklady/1952-kopilka?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки Online на 32 дня",
       "currency": "BYN",
@@ -2091,7 +2091,7 @@
       "url": "https://myfin.by/bank/mtbank/vklady/2054-mtbelki-online-na-32-dnya?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки на 32 дня",
       "currency": "BYN",
@@ -2301,39 +2301,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2185-na-25-mesacev-loalnyj-vip-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Стабильный доход",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 3,
-      "yieldTotal": 0.09,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Безотзывный Online",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 3,
-      "yieldTotal": 0.09,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
       "product": "RRB USD online 24",
@@ -2444,6 +2411,39 @@
       "url": "https://myfin.by/bank/bnbank/vklady/2015-srochnyyi-bezotzyvnyyi-usd?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Безотзывный Online",
+      "currency": "USD",
+      "rate": 0.6,
+      "termMonths": 3,
+      "yieldTotal": 0.11,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Стабильный доход",
+      "currency": "USD",
+      "rate": 0.5,
+      "termMonths": 3,
+      "yieldTotal": 0.09,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Нео Банк Азия",
       "bankSlug": "btabank",
       "product": "Нео Безотзывный Online",
@@ -2511,22 +2511,6 @@
     {
       "bank": "Белинвестбанк",
       "bankSlug": "belinvestbank",
-      "product": "Личный выбор (безотзывный) в валюте online",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 24,
-      "yieldTotal": 1.0,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/2060-lichnyyi-vybor-bezotzyvnyyi-v-valyute-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
       "product": "Личный выбор (безотзывный) в валюте",
       "currency": "USD",
       "rate": 0.5,
@@ -2543,18 +2527,18 @@
     {
       "bank": "Белинвестбанк",
       "bankSlug": "belinvestbank",
-      "product": "Детский",
+      "product": "Личный выбор (безотзывный) в валюте online",
       "currency": "USD",
       "rate": 0.5,
-      "termMonths": 37,
-      "yieldTotal": 2.53,
+      "termMonths": 24,
+      "yieldTotal": 1.0,
       "capitalization": true,
       "tags": [
         "Пополнение",
         "Капитализация",
         "Фиксированная ставка"
       ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+      "url": "https://myfin.by/bank/belinvestbank/vklady/2060-lichnyyi-vybor-bezotzyvnyyi-v-valyute-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
@@ -2573,6 +2557,22 @@
       "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Детский",
+      "currency": "USD",
+      "rate": 0.5,
+      "termMonths": 37,
+      "yieldTotal": 2.53,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Альфа Банк",
       "bankSlug": "alfabank",
       "product": "Альфа-Вклад (безотзывный) в валюте",
@@ -2587,6 +2587,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/alfabank/vklady/1997-alfa-vklad-bezotzyvnyyi-v-byn-na-7-mesyatsev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Отличный",
+      "currency": "USD",
+      "rate": 0.4,
+      "termMonths": 12,
+      "yieldTotal": 0.31,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/1297-otlichnyyi-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Решение",
@@ -2607,17 +2622,50 @@
     {
       "bank": "Технобанк",
       "bankSlug": "technobank",
-      "product": "Отличный",
+      "product": "Оптимальный в валюте",
       "currency": "USD",
-      "rate": 0.4,
-      "termMonths": 12,
-      "yieldTotal": 0.31,
+      "rate": 0.1,
+      "termMonths": 6,
+      "yieldTotal": 0.04,
       "capitalization": true,
       "tags": [
         "Капитализация",
         "Фиксированная ставка"
       ],
-      "url": "https://myfin.by/bank/technobank/vklady/1297-otlichnyyi-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+      "url": "https://myfin.by/bank/technobank/vklady/1756-optimalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "МТбанк",
+      "bankSlug": "mtbank",
+      "product": "Актуальный безотзывный на 12 мес.",
+      "currency": "USD",
+      "rate": 0.1,
+      "termMonths": 12,
+      "yieldTotal": 0.08,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1421-aktualjnyyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "МТбанк",
+      "bankSlug": "mtbank",
+      "product": "Актуальный online (безотзывный)",
+      "currency": "USD",
+      "rate": 0.1,
+      "termMonths": 12,
+      "yieldTotal": 0.08,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/2016-aktualnyyi-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "СтатусБанк",
@@ -2636,35 +2684,19 @@
       "url": "https://myfin.by/bank/statusbank/vklady/1910-status-dostupnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
-      "bankSlug": "mtbank",
-      "product": "Актуальный безотзывный на 24 мес.",
+      "bank": "Цептер Банк",
+      "bankSlug": "zepterbank",
+      "product": "В иностранной валюте",
       "currency": "USD",
       "rate": 0.1,
-      "termMonths": 24,
-      "yieldTotal": 0.2,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1904-aktualnyyi-bezotzyvnyyi-na-2-mes?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "МТБанк",
-      "bankSlug": "mtbank",
-      "product": "Актуальный безотзывный на 12 мес.",
-      "currency": "USD",
-      "rate": 0.1,
-      "termMonths": 12,
-      "yieldTotal": 0.08,
-      "capitalization": true,
+      "termMonths": 6,
+      "yieldTotal": 0.04,
+      "capitalization": false,
       "tags": [
         "Пополнение",
-        "Капитализация",
         "Фиксированная ставка"
       ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1421-aktualjnyyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+      "url": "https://myfin.by/bank/zepterbank/vklady/2029-v-inostrannoyi-valyute?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "СтатусБанк",
@@ -2682,67 +2714,19 @@
       "url": "https://myfin.by/bank/statusbank/vklady/1908-status-udobnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Оптимальный в валюте",
-      "currency": "USD",
-      "rate": 0.1,
-      "termMonths": 6,
-      "yieldTotal": 0.04,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/1756-optimalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
-      "product": "Актуальный online (безотзывный)",
+      "product": "Актуальный безотзывный на 24 мес.",
       "currency": "USD",
       "rate": 0.1,
-      "termMonths": 12,
-      "yieldTotal": 0.08,
+      "termMonths": 24,
+      "yieldTotal": 0.2,
       "capitalization": true,
       "tags": [
-        "Пополнение",
         "Капитализация",
-        "Пролонгация",
         "Фиксированная ставка"
       ],
-      "url": "https://myfin.by/bank/mtbank/vklady/2016-aktualnyyi-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Цептер Банк",
-      "bankSlug": "zepterbank",
-      "product": "В иностранной валюте",
-      "currency": "USD",
-      "rate": 0.1,
-      "termMonths": 6,
-      "yieldTotal": 0.04,
-      "capitalization": false,
-      "tags": [
-        "Пополнение",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/zepterbank/vklady/2029-v-inostrannoyi-valyute?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Копилка (Онлайн)",
-      "currency": "USD",
-      "rate": 0.01,
-      "termMonths": 1,
-      "yieldTotal": 0.03,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Досрочное снятие"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/1952-kopilka?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+      "url": "https://myfin.by/bank/mtbank/vklady/1904-aktualnyyi-bezotzyvnyyi-na-2-mes?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Беларусбанк",
@@ -2775,6 +2759,22 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belarusbank/vklady/2010-bolshie-vozmozhnosti-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Копилка (Онлайн)",
+      "currency": "USD",
+      "rate": 0.01,
+      "termMonths": 1,
+      "yieldTotal": 0.03,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Досрочное снятие"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/1952-kopilka?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк БелВЭБ",
@@ -2891,7 +2891,7 @@
       "url": "https://myfin.by/bank/statusbank/vklady/1910-status-dostupnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "Актуальный безотзывный на 24 мес.",
       "currency": "EUR",
@@ -2954,7 +2954,7 @@
       "url": "https://myfin.by/bank/bvebank/vklady/1490-sberegatelnyyi-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "Актуальный online (безотзывный)",
       "currency": "EUR",
@@ -2971,7 +2971,7 @@
       "url": "https://myfin.by/bank/mtbank/vklady/2016-aktualnyyi-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "МТБанк",
+      "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "Актуальный безотзывный на 12 мес.",
       "currency": "EUR",
