@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T07:41:00.788620+00:00",
+  "updatedAt": "2026-08-07T06:09:45.459483+00:00",
   "source": "myfin.by",
   "count": 202,
   "offers": [
@@ -281,22 +281,6 @@
       "url": "https://myfin.by/bank/zepterbank/vklady/2168-cepter-1100-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Наше будущее",
-      "currency": "BYN",
-      "rate": 14.5,
-      "termMonths": 60,
-      "yieldTotal": 107.64,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
       "product": "Правильный выбор онлайн (безотзывный) в BYN",
@@ -371,6 +355,22 @@
       "url": "https://myfin.by/bank/belarusbank/vklady/1816-uspeshnyyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Наше будущее",
+      "currency": "BYN",
+      "rate": 14.2,
+      "termMonths": 60,
+      "yieldTotal": 104.54,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Белинвестбанк",
       "bankSlug": "belinvestbank",
       "product": "Детский",
@@ -417,21 +417,6 @@
       "url": "https://myfin.by/bank/alfabank/vklady/2101-alfa-vklad-bezotzyvnyyi-v-byn-na-18-mesyatsev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "ТриоГранд",
-      "currency": "BYN",
-      "rate": 14.0,
-      "termMonths": 36,
-      "yieldTotal": 42.78,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2147-triogrand?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
       "product": "Шчодры онлайн",
@@ -445,6 +430,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/dabrabyt/vklady/1789-shchodry-onlayin?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "ТриоГранд",
+      "currency": "BYN",
+      "rate": 13.6,
+      "termMonths": 36,
+      "yieldTotal": 41.56,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2147-triogrand?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "МТбанк",
@@ -540,21 +540,6 @@
       "url": "https://myfin.by/bank/btabank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "СтатусБанк",
-      "bankSlug": "statusbank",
-      "product": "Статус - Надёжный на 13 месяцев",
-      "currency": "BYN",
-      "rate": 13.32,
-      "termMonths": 13,
-      "yieldTotal": 15.43,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/statusbank/vklady/2174-status-nadeznyj-na-13-mesacev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Сбер Банк",
       "bankSlug": "bps-sberbank",
       "product": "Сберегай",
@@ -569,37 +554,6 @@
         "Пролонгация"
       ],
       "url": "https://myfin.by/bank/bps-sberbank/vklady/2175-sberegaj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Перспектива 2.0 Онлайн",
-      "currency": "BYN",
-      "rate": 13.3,
-      "termMonths": 18,
-      "yieldTotal": 19.95,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2171-perspektiva-20-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Надежный клад Онлайн",
-      "currency": "BYN",
-      "rate": 13.2,
-      "termMonths": 12,
-      "yieldTotal": 13.56,
-      "capitalization": false,
-      "tags": [
-        "Пополнение",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2170-nadeznyj-klad-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Нео Банк Азия",
@@ -617,36 +571,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/btabank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "СтатусБанк",
-      "bankSlug": "statusbank",
-      "product": "Статус - Надёжный",
-      "currency": "BYN",
-      "rate": 12.0,
-      "termMonths": 18,
-      "yieldTotal": 21.58,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/statusbank/vklady/2057-status-nadyozhnyyi-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Скарб Онлайн",
-      "currency": "BYN",
-      "rate": 13.1,
-      "termMonths": 12,
-      "yieldTotal": 14.32,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2172-skarb-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Приорбанк",
@@ -713,21 +637,6 @@
       "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Перспектива",
-      "currency": "BYN",
-      "rate": 13.0,
-      "termMonths": 18,
-      "yieldTotal": 21.4,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2118-perspektiva?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
       "product": "RRB BYN 37",
@@ -789,6 +698,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/1488-online-reshenie?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Надёжный",
+      "currency": "BYN",
+      "rate": 12.0,
+      "termMonths": 18,
+      "yieldTotal": 21.22,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/2057-status-nadyozhnyyi-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Паритетбанк",
@@ -870,21 +794,6 @@
       "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Надежный клад",
-      "currency": "BYN",
-      "rate": 12.9,
-      "termMonths": 12,
-      "yieldTotal": 13.25,
-      "capitalization": false,
-      "tags": [
-        "Пополнение",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2040-nadezhnyyi-klad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
       "product": "Хуткі онлайн",
@@ -928,6 +837,37 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/rrb-bank/vklady/2158-rrb-byn-online-13?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Перспектива 2.0 Онлайн",
+      "currency": "BYN",
+      "rate": 12.9,
+      "termMonths": 18,
+      "yieldTotal": 19.35,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2171-perspektiva-20-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Надёжный на 13 месяцев",
+      "currency": "BYN",
+      "rate": 12.9,
+      "termMonths": 13,
+      "yieldTotal": 14.91,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/2174-status-nadeznyj-na-13-mesacev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
@@ -1024,17 +964,17 @@
     {
       "bank": "Технобанк",
       "bankSlug": "technobank",
-      "product": "Скарб",
+      "product": "Надежный клад Онлайн",
       "currency": "BYN",
       "rate": 12.8,
       "termMonths": 12,
-      "yieldTotal": 13.98,
-      "capitalization": true,
+      "yieldTotal": 13.15,
+      "capitalization": false,
       "tags": [
-        "Капитализация",
+        "Пополнение",
         "Фиксированная ставка"
       ],
-      "url": "https://myfin.by/bank/technobank/vklady/2043-skarb?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+      "url": "https://myfin.by/bank/technobank/vklady/2170-nadeznyj-klad-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Беларусбанк",
@@ -1129,6 +1069,36 @@
       "url": "https://myfin.by/bank/bank-vtb/vklady/1993-moi-usloviya-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Перспектива",
+      "currency": "BYN",
+      "rate": 12.6,
+      "termMonths": 18,
+      "yieldTotal": 20.69,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2118-perspektiva?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Надежный клад",
+      "currency": "BYN",
+      "rate": 12.5,
+      "termMonths": 12,
+      "yieldTotal": 12.84,
+      "capitalization": false,
+      "tags": [
+        "Пополнение",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2040-nadezhnyyi-klad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
       "product": "RRB BYN 13",
@@ -1144,6 +1114,21 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2153-rrb-byn-13?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Скарб Онлайн",
+      "currency": "BYN",
+      "rate": 12.5,
+      "termMonths": 12,
+      "yieldTotal": 13.63,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2172-skarb-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Белгазпромбанк",
       "bankSlug": "belgazprombank",
       "product": "На 13 месяцев выгодный онлайн (безотзывный)",
@@ -1157,6 +1142,21 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2188-na-13-mesacev-vygodnyj-onlajn-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Скарб",
+      "currency": "BYN",
+      "rate": 12.3,
+      "termMonths": 12,
+      "yieldTotal": 13.4,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2043-skarb?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
