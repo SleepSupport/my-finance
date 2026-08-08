@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T06:09:45.459483+00:00",
+  "updatedAt": "2026-08-08T05:42:37.334791+00:00",
   "source": "myfin.by",
   "count": 202,
   "offers": [
@@ -220,22 +220,6 @@
       "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса в BYN (капитализация)",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 3,
-      "yieldTotal": 1.33,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/1951-srochnyyi-bezotzyvnyyi-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Цептер Банк",
       "bankSlug": "zepterbank",
       "product": "В белорусских рублях",
@@ -250,21 +234,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/zepterbank/vklady/2030-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса в BYN (проценты на счет)",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 3,
-      "yieldTotal": 1.32,
-      "capitalization": false,
-      "tags": [
-        "Пополнение",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/2131-bezotzyvnyyi-vklad-v-byn-protsenty-na-schet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Цептер Банк",
@@ -477,6 +446,22 @@
       "url": "https://myfin.by/bank/dabrabyt/vklady/1790-shchodry?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Безотзывный вклад Такса в BYN (капитализация)",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 3,
+      "yieldTotal": 1.33,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/1951-srochnyyi-bezotzyvnyyi-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "ТК Банк",
       "bankSlug": "tkbank",
       "product": "Безотзывный (капитализация)",
@@ -490,6 +475,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/tkbank/vklady/2100-srochnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Безотзывный вклад Такса в BYN (проценты на счет)",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 3,
+      "yieldTotal": 1.32,
+      "capitalization": false,
+      "tags": [
+        "Пополнение",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/2131-bezotzyvnyyi-vklad-v-byn-protsenty-na-schet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк РРБ",
