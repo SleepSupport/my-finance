@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T06:10:53.812804+00:00",
+  "updatedAt": "2026-08-11T05:53:27.820984+00:00",
   "source": "myfin.by",
   "count": 202,
   "offers": [
@@ -540,22 +540,6 @@
       "url": "https://myfin.by/bank/btabank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Сбер Банк",
-      "bankSlug": "bps-sberbank",
-      "product": "Сберегай",
-      "currency": "BYN",
-      "rate": 13.32,
-      "termMonths": 13,
-      "yieldTotal": 15.43,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Пролонгация"
-      ],
-      "url": "https://myfin.by/bank/bps-sberbank/vklady/2175-sberegaj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Нео Банк Азия",
       "bankSlug": "btabank",
       "product": "Нео Безотзывный",
@@ -868,6 +852,22 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/statusbank/vklady/2174-status-nadeznyj-na-13-mesacev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Сбер Банк",
+      "bankSlug": "bps-sberbank",
+      "product": "Сберегай",
+      "currency": "BYN",
+      "rate": 12.9,
+      "termMonths": 13,
+      "yieldTotal": 14.91,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Пролонгация"
+      ],
+      "url": "https://myfin.by/bank/bps-sberbank/vklady/2175-sberegaj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
@@ -1314,21 +1314,6 @@
       "url": "https://myfin.by/bank/technobank/vklady/2145-optimalnyj-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "СтатусБанк",
-      "bankSlug": "statusbank",
-      "product": "Статус - Удобный",
-      "currency": "BYN",
-      "rate": 7.5,
-      "termMonths": 6,
-      "yieldTotal": 2.88,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/statusbank/vklady/1908-status-udobnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
       "product": "RRB BYN 6",
@@ -1520,22 +1505,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bps-sberbank/vklady/1416-priumnozhayi-otzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "СтатусБанк",
-      "bankSlug": "statusbank",
-      "product": "Статус - Доступный",
-      "currency": "BYN",
-      "rate": 6.0,
-      "termMonths": 12,
-      "yieldTotal": 6.34,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/statusbank/vklady/1910-status-dostupnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "БНБ-Банк",
@@ -1980,6 +1949,21 @@
       "url": "https://myfin.by/bank/zepterbank/vklady/2105-tsepter-smart-komfort?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Удобный",
+      "currency": "BYN",
+      "rate": 3.0,
+      "termMonths": 6,
+      "yieldTotal": 1.33,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/1908-status-udobnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Цептер Банк",
       "bankSlug": "zepterbank",
       "product": "Цептер 35 Онлайн",
@@ -2025,6 +2009,22 @@
         "Пролонгация"
       ],
       "url": "https://myfin.by/bank/mtbank/vklady/1020-mtbelki-otzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Доступный",
+      "currency": "BYN",
+      "rate": 3.0,
+      "termMonths": 12,
+      "yieldTotal": 3.13,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/1910-status-dostupnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк БелВЭБ",
