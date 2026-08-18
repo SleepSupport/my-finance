@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T05:35:58.742608+00:00",
+  "updatedAt": "2026-08-18T05:30:18.981841+00:00",
   "source": "myfin.by",
   "count": 209,
   "offers": [
@@ -1516,6 +1516,23 @@
       "url": "https://myfin.by/bank/bps-sberbank/vklady/984-priumnozhayi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк БелВЭБ",
+      "bankSlug": "bvebank",
+      "product": "Отзывный вклад (онлайн)",
+      "currency": "BYN",
+      "rate": 4.1,
+      "termMonths": 1,
+      "yieldTotal": 0.44,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bvebank/vklady/1179-internet-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк Решение",
       "bankSlug": "reshenie",
       "product": "Свободное накопление",
@@ -1880,23 +1897,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bank-vtb/vklady/1994-moi-usloviya-otzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк БелВЭБ",
-      "bankSlug": "bvebank",
-      "product": "Отзывный вклад (онлайн)",
-      "currency": "BYN",
-      "rate": 4.1,
-      "termMonths": 1,
-      "yieldTotal": 0.3,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Пролонгация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bvebank/vklady/1179-internet-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
