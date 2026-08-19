@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T05:30:18.981841+00:00",
+  "updatedAt": "2026-08-19T05:31:14.606330+00:00",
   "source": "myfin.by",
   "count": 209,
   "offers": [
@@ -771,6 +771,7 @@
       "yieldTotal": 0.52,
       "capitalization": true,
       "tags": [
+        "Пополнение",
         "Капитализация",
         "Пролонгация",
         "Фиксированная ставка"
@@ -804,6 +805,7 @@
       "yieldTotal": 0.89,
       "capitalization": true,
       "tags": [
+        "Пополнение",
         "Капитализация",
         "Фиксированная ставка"
       ],
@@ -819,6 +821,7 @@
       "yieldTotal": 3.24,
       "capitalization": true,
       "tags": [
+        "Пополнение",
         "Капитализация",
         "Фиксированная ставка"
       ],
@@ -1542,10 +1545,11 @@
       "yieldTotal": 0.44,
       "capitalization": true,
       "tags": [
+        "Пополнение",
         "Капитализация",
         "Досрочное снятие",
         "Пролонгация",
-        "Фиксированная ставка"
+        "Еще"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/1423-shkvarka-otzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
@@ -2719,6 +2723,7 @@
       "yieldTotal": 0.02,
       "capitalization": true,
       "tags": [
+        "Пополнение",
         "Капитализация",
         "Пролонгация",
         "Фиксированная ставка"
@@ -3245,6 +3250,7 @@
       "yieldTotal": 0.01,
       "capitalization": true,
       "tags": [
+        "Пополнение",
         "Капитализация",
         "Пролонгация",
         "Фиксированная ставка"
