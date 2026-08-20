@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-19T05:31:14.606330+00:00",
+  "updatedAt": "2026-08-20T05:31:53.854441+00:00",
   "source": "myfin.by",
-  "count": 209,
+  "count": 213,
   "offers": [
     {
       "bank": "Банк ВТБ (Беларусь)",
@@ -166,9 +166,9 @@
       "bankSlug": "bnbank",
       "product": "Безотзывный вклад Такса на 13 месяцев в BYN",
       "currency": "BYN",
-      "rate": 12.9,
+      "rate": 12.0,
       "termMonths": 13,
-      "yieldTotal": 14.91,
+      "yieldTotal": 13.81,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -461,22 +461,6 @@
       "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса в BYN (капитализация)",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 3,
-      "yieldTotal": 1.33,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/1951-srochnyyi-bezotzyvnyyi-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "ТК Банк",
       "bankSlug": "tkbank",
       "product": "Безотзывный (капитализация)",
@@ -490,21 +474,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/tkbank/vklady/2100-srochnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса в BYN (проценты на счет)",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 3,
-      "yieldTotal": 1.32,
-      "capitalization": false,
-      "tags": [
-        "Пополнение",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/2131-bezotzyvnyyi-vklad-v-byn-protsenty-na-schet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк РРБ",
@@ -1193,6 +1162,37 @@
       "url": "https://myfin.by/bank/technobank/vklady/2040-nadezhnyyi-klad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Безотзывный вклад Такса в BYN (капитализация)",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 3,
+      "yieldTotal": 1.33,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/1951-srochnyyi-bezotzyvnyyi-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Безотзывный вклад Такса в BYN (проценты на счет)",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 3,
+      "yieldTotal": 1.32,
+      "capitalization": false,
+      "tags": [
+        "Пополнение",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/2131-bezotzyvnyyi-vklad-v-byn-protsenty-na-schet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
       "product": "RRB BYN 13",
@@ -1394,20 +1394,6 @@
       "url": "https://myfin.by/bank/belarusbank/vklady/1991-klassik-bezotzyvnyyi-dlya-nerezidentov?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Оптимальный в BYN",
-      "currency": "BYN",
-      "rate": 8.5,
-      "termMonths": 6,
-      "yieldTotal": 3.22,
-      "capitalization": false,
-      "tags": [
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/2145-optimalnyj-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
       "product": "RRB BYN 6",
@@ -1421,6 +1407,34 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/rrb-bank/vklady/2152-rrb-byn-6?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Оптимальный в BYN Онлайн",
+      "currency": "BYN",
+      "rate": 8.5,
+      "termMonths": 6,
+      "yieldTotal": 3.22,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2200-optimalnyj-v-byn-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Оптимальный в BYN",
+      "currency": "BYN",
+      "rate": 8.3,
+      "termMonths": 6,
+      "yieldTotal": 3.14,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2145-optimalnyj-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "БНБ-Банк",
@@ -1440,11 +1454,25 @@
     {
       "bank": "Технобанк",
       "bankSlug": "technobank",
-      "product": "ТРИумф в BYN",
+      "product": "ТРИумф в BYN Онлайн",
       "currency": "BYN",
       "rate": 7.0,
       "termMonths": 3,
       "yieldTotal": 1.4,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2199-triumf-v-byn-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "ТРИумф в BYN",
+      "currency": "BYN",
+      "rate": 6.8,
+      "termMonths": 3,
+      "yieldTotal": 1.36,
       "capitalization": false,
       "tags": [
         "Фиксированная ставка"
@@ -1840,20 +1868,6 @@
       "url": "https://myfin.by/bank/belinvestbank/vklady/1839-lichnyyi-vybor-v-byn-otzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Дуэт",
-      "currency": "BYN",
-      "rate": 5.0,
-      "termMonths": 2,
-      "yieldTotal": 0.63,
-      "capitalization": false,
-      "tags": [
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/1120-duyet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Белагропромбанк",
       "bankSlug": "belagroprombank",
       "product": "Плюс к накоплениям в BYN",
@@ -1887,6 +1901,20 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/1829-otzyvnyyi-vygodnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Дуэт Онлайн",
+      "currency": "BYN",
+      "rate": 5.0,
+      "termMonths": 2,
+      "yieldTotal": 0.63,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2198-duet-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
       "product": "Мои условия (отзывный)",
@@ -1905,16 +1933,16 @@
     {
       "bank": "Технобанк",
       "bankSlug": "technobank",
-      "product": "Соло",
+      "product": "Дуэт",
       "currency": "BYN",
-      "rate": 4.5,
-      "termMonths": 1,
-      "yieldTotal": 0.33,
+      "rate": 4.8,
+      "termMonths": 2,
+      "yieldTotal": 0.61,
       "capitalization": false,
       "tags": [
         "Фиксированная ставка"
       ],
-      "url": "https://myfin.by/bank/technobank/vklady/1093-solo?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+      "url": "https://myfin.by/bank/technobank/vklady/1120-duyet?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "МТбанк",
@@ -1963,6 +1991,20 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2155-rrb-byn-online-1?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Соло Онлайн",
+      "currency": "BYN",
+      "rate": 4.5,
+      "termMonths": 1,
+      "yieldTotal": 0.33,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/2197-solo-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк БелВЭБ",
       "bankSlug": "bvebank",
       "product": "Отзывный вклад (оффлайн)",
@@ -1978,6 +2020,20 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bvebank/vklady/840-universaljnyyi-s-plavayuscheyi-protsentnoyi-stavkoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Соло",
+      "currency": "BYN",
+      "rate": 4.3,
+      "termMonths": 1,
+      "yieldTotal": 0.32,
+      "capitalization": false,
+      "tags": [
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/1093-solo?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "МТбанк",
