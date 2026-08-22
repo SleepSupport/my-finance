@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T05:33:29.737605+00:00",
+  "updatedAt": "2026-08-22T05:28:00.619414+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -121,9 +121,9 @@
       "bankSlug": "bps-sberbank",
       "product": "Сохраняй безотзывный в BYN Online",
       "currency": "BYN",
-      "rate": 6.9,
-      "termMonths": 1,
-      "yieldTotal": 0.87,
+      "rate": 6.1,
+      "termMonths": 2,
+      "yieldTotal": 1.15,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -209,9 +209,9 @@
       "bankSlug": "bps-sberbank",
       "product": "Сохраняй безотзывный в BYN",
       "currency": "BYN",
-      "rate": 6.8,
-      "termMonths": 1,
-      "yieldTotal": 0.86,
+      "rate": 6.0,
+      "termMonths": 2,
+      "yieldTotal": 1.13,
       "capitalization": true,
       "tags": [
         "Пополнение",
