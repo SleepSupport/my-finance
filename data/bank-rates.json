@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T05:38:52.709356+00:00",
+  "updatedAt": "2026-08-25T05:32:42.106718+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -557,23 +557,6 @@
       "url": "https://myfin.by/bank/btabank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Приорбанк",
-      "bankSlug": "priorbank",
-      "product": "Пять звёзд Скала",
-      "currency": "BYN",
-      "rate": 4.0,
-      "termMonths": 6,
-      "yieldTotal": 1.53,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Пролонгация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/priorbank/vklady/790-pyatj-zvyozd-skala-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк БелВЭБ",
       "bankSlug": "bvebank",
       "product": "Безотзывный вклад (онлайн)",
@@ -588,21 +571,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bvebank/vklady/1490-sberegatelnyyi-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Приорбанк",
-      "bankSlug": "priorbank",
-      "product": "Электронный депозит Выше.Net",
-      "currency": "BYN",
-      "rate": 4.0,
-      "termMonths": 6,
-      "yieldTotal": 1.53,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/priorbank/vklady/1641-yelektronnyyi-depozit-vyshenet-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
@@ -932,6 +900,38 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2192-na-18-mesacev-nakopitelnyj-onlajn-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Приорбанк",
+      "bankSlug": "priorbank",
+      "product": "Пять звёзд. Скала",
+      "currency": "BYN",
+      "rate": 4.0,
+      "termMonths": 6,
+      "yieldTotal": 1.53,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/priorbank/vklady/790-pyatj-zvyozd-skala-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Приорбанк",
+      "bankSlug": "priorbank",
+      "product": "Электронный депозит Выше.Net",
+      "currency": "BYN",
+      "rate": 4.0,
+      "termMonths": 6,
+      "yieldTotal": 1.53,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/priorbank/vklady/1641-yelektronnyyi-depozit-vyshenet-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "МТбанк",
