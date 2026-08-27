@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T05:35:08.233041+00:00",
+  "updatedAt": "2026-08-27T16:10:10.783685+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -87,9 +87,9 @@
       "bankSlug": "bvebank",
       "product": "Безотзывный вклад (оффлайн)",
       "currency": "BYN",
-      "rate": 6.5,
+      "rate": 5.8,
       "termMonths": 1,
-      "yieldTotal": 0.48,
+      "yieldTotal": 0.43,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -191,20 +191,6 @@
       "url": "https://myfin.by/bank/technobank/vklady/2169-triogrand-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Альтернатива плюс",
-      "currency": "BYN",
-      "rate": 13.3,
-      "termMonths": 12,
-      "yieldTotal": 14.56,
-      "capitalization": true,
-      "tags": [
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Сбер Банк",
       "bankSlug": "bps-sberbank",
       "product": "Сохраняй безотзывный в BYN",
@@ -234,6 +220,20 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/zepterbank/vklady/2030-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Альтернатива плюс",
+      "currency": "BYN",
+      "rate": 12.9,
+      "termMonths": 12,
+      "yieldTotal": 14.09,
+      "capitalization": true,
+      "tags": [
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Цептер Банк",
@@ -325,6 +325,21 @@
       "url": "https://myfin.by/bank/belarusbank/vklady/2112-rastem-vmeste-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
+      "product": "RRB BYN online 37",
+      "currency": "BYN",
+      "rate": 14.4,
+      "termMonths": 37,
+      "yieldTotal": 55.48,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2159-rrb-byn-online-36?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
       "product": "Успешный Безотзывный",
@@ -383,6 +398,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
+      "product": "RRB BYN 37",
+      "currency": "BYN",
+      "rate": 14.2,
+      "termMonths": 37,
+      "yieldTotal": 54.54,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2154-rrb-byn-36?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белинвестбанк",
@@ -476,21 +506,6 @@
       "url": "https://myfin.by/bank/tkbank/vklady/2100-srochnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
-      "product": "RRB BYN online 37",
-      "currency": "BYN",
-      "rate": 13.5,
-      "termMonths": 37,
-      "yieldTotal": 51.27,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2159-rrb-byn-online-36?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Альфа Банк",
       "bankSlug": "alfabank",
       "product": "Альфа Вклад (безотзывный) в BYN с эффективной ставкой",
@@ -561,9 +576,9 @@
       "bankSlug": "bvebank",
       "product": "Безотзывный вклад (онлайн)",
       "currency": "BYN",
-      "rate": 5.6,
+      "rate": 6.1,
       "termMonths": 1,
-      "yieldTotal": 0.41,
+      "yieldTotal": 0.45,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -587,37 +602,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2116-bezotzyvnyyi-vygodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Доходный плюс",
-      "currency": "BYN",
-      "rate": 13.0,
-      "termMonths": 12,
-      "yieldTotal": 14.3,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
-      "product": "RRB BYN 37",
-      "currency": "BYN",
-      "rate": 13.0,
-      "termMonths": 37,
-      "yieldTotal": 48.99,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2154-rrb-byn-36?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Решение",
@@ -1070,6 +1054,22 @@
       "url": "https://myfin.by/bank/alfabank/vklady/2027-alfa-parus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Доходный плюс",
+      "currency": "BYN",
+      "rate": 12.7,
+      "termMonths": 12,
+      "yieldTotal": 13.92,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
       "product": "Ежедневник",
@@ -1287,17 +1287,62 @@
     {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
+      "product": "RRB BYN 9",
+      "currency": "BYN",
+      "rate": 10.2,
+      "termMonths": 9,
+      "yieldTotal": 5.99,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2189-rrb-byn-9?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
       "product": "RRB BYN online 9",
       "currency": "BYN",
-      "rate": 9.5,
+      "rate": 10.2,
       "termMonths": 9,
-      "yieldTotal": 5.57,
+      "yieldTotal": 5.99,
       "capitalization": true,
       "tags": [
         "Капитализация",
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/rrb-bank/vklady/2190-rrb-byn-online-9?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
+      "product": "RRB BYN 6",
+      "currency": "BYN",
+      "rate": 10.0,
+      "termMonths": 6,
+      "yieldTotal": 3.86,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2152-rrb-byn-6?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
+      "product": "RRB BYN online 6",
+      "currency": "BYN",
+      "rate": 10.0,
+      "termMonths": 6,
+      "yieldTotal": 3.86,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2157-rrb-byn-online-6?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Беларусбанк",
@@ -1348,36 +1393,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/1828-bezotzyvnyyi-vygodnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
-      "product": "RRB BYN online 6",
-      "currency": "BYN",
-      "rate": 9.0,
-      "termMonths": 6,
-      "yieldTotal": 3.47,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2157-rrb-byn-online-6?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
-      "product": "RRB BYN 9",
-      "currency": "BYN",
-      "rate": 9.0,
-      "termMonths": 9,
-      "yieldTotal": 5.27,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2189-rrb-byn-9?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
       "product": "Безотзывный для нерезидентов",
@@ -1392,21 +1407,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belarusbank/vklady/1991-klassik-bezotzyvnyyi-dlya-nerezidentov?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
-      "product": "RRB BYN 6",
-      "currency": "BYN",
-      "rate": 8.5,
-      "termMonths": 6,
-      "yieldTotal": 3.27,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2152-rrb-byn-6?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
