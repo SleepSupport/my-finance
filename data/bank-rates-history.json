@@ -922,5 +922,26 @@
       "minRate": 0.0,
       "count": 23
     }
+  },
+  {
+    "date": "2026-09-01",
+    "BYN": {
+      "maxRate": 14.62,
+      "avgRate": 7.51,
+      "minRate": 0.5,
+      "count": 149
+    },
+    "USD": {
+      "maxRate": 2.1,
+      "avgRate": 0.6,
+      "minRate": 0.0,
+      "count": 37
+    },
+    "EUR": {
+      "maxRate": 0.1,
+      "avgRate": 0.05,
+      "minRate": 0.0,
+      "count": 23
+    }
   }
 ]
