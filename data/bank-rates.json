@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T09:20:24.134887+00:00",
+  "updatedAt": "2026-09-03T09:30:06.826571+00:00",
   "source": "myfin.by",
   "count": 209,
   "offers": [
@@ -652,22 +652,6 @@
       "url": "https://myfin.by/bank/statusbank/vklady/2057-status-nadyozhnyyi-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Безотзывный Online",
-      "currency": "BYN",
-      "rate": 4.1,
-      "termMonths": 1,
-      "yieldTotal": 0.3,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Решение",
       "bankSlug": "reshenie",
       "product": "Формула успеха",
@@ -683,23 +667,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/1424-formula-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Стабильный доход",
-      "currency": "BYN",
-      "rate": 4.0,
-      "termMonths": 1,
-      "yieldTotal": 0.3,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Решение",
@@ -1008,6 +975,39 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2182-na-13-mesacev-vygodnyj-plus-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Безотзывный Online",
+      "currency": "BYN",
+      "rate": 4.1,
+      "termMonths": 1,
+      "yieldTotal": 0.3,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Стабильный доход",
+      "currency": "BYN",
+      "rate": 4.0,
+      "termMonths": 1,
+      "yieldTotal": 0.3,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
       "product": "Мои условия (безотзывный)",
@@ -1244,9 +1244,9 @@
       "bankSlug": "bnbank",
       "product": "Безотзывный вклад Такса в BYN (проценты на счет)",
       "currency": "BYN",
-      "rate": 7.0,
+      "rate": 6.0,
       "termMonths": 3,
-      "yieldTotal": 1.32,
+      "yieldTotal": 1.14,
       "capitalization": false,
       "tags": [
         "Пополнение",
@@ -1420,21 +1420,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2145-optimalnyj-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса в BYN на 35 дней",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 1,
-      "yieldTotal": 0.52,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/2127-bezotzyvnyyi-vklad-byn-na-35-dneyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
@@ -1944,6 +1929,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bps-sberbank/vklady/1416-priumnozhayi-otzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Безотзывный вклад Такса в BYN на 35 дней",
+      "currency": "BYN",
+      "rate": 4.5,
+      "termMonths": 1,
+      "yieldTotal": 0.33,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/2127-bezotzyvnyyi-vklad-byn-na-35-dneyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк РРБ",
