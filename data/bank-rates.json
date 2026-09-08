@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T09:59:21.059299+00:00",
+  "updatedAt": "2026-09-08T09:24:33.470072+00:00",
   "source": "myfin.by",
   "count": 208,
   "offers": [
@@ -405,9 +405,9 @@
       "bankSlug": "tkbank",
       "product": "Безотзывный (капитализация)",
       "currency": "BYN",
-      "rate": 12.0,
+      "rate": 12.5,
       "termMonths": 12,
-      "yieldTotal": 13.05,
+      "yieldTotal": 13.75,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -621,22 +621,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2183-na-37-mesacev-vygodnyj-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Online-решение",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 1,
-      "yieldTotal": 0.52,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1488-online-reshenie?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "СтатусБанк",
       "bankSlug": "statusbank",
       "product": "Статус - Надёжный",
@@ -650,55 +634,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/statusbank/vklady/2057-status-nadyozhnyyi-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Формула успеха",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 1,
-      "yieldTotal": 0.52,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Пролонгация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1424-formula-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Online-решение new",
-      "currency": "BYN",
-      "rate": 7.0,
-      "termMonths": 2,
-      "yieldTotal": 0.89,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1553-online-reshenie-new?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Решение",
-      "bankSlug": "reshenie",
-      "product": "Почтенный",
-      "currency": "BYN",
-      "rate": 10.1,
-      "termMonths": 5,
-      "yieldTotal": 3.24,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "СтатусБанк",
@@ -764,6 +699,22 @@
       "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Online-решение",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 1,
+      "yieldTotal": 0.52,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1488-online-reshenie?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Паритетбанк",
       "bankSlug": "paritetbank",
       "product": "Безотзывный Online",
@@ -778,6 +729,23 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Формула успеха",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 1,
+      "yieldTotal": 0.52,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1424-formula-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Паритетбанк",
@@ -795,6 +763,38 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Online-решение new",
+      "currency": "BYN",
+      "rate": 7.0,
+      "termMonths": 2,
+      "yieldTotal": 0.89,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1553-online-reshenie-new?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Решение",
+      "bankSlug": "reshenie",
+      "product": "Почтенный",
+      "currency": "BYN",
+      "rate": 10.1,
+      "termMonths": 5,
+      "yieldTotal": 3.24,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
