@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T09:24:33.470072+00:00",
+  "updatedAt": "2026-09-09T09:26:18.060476+00:00",
   "source": "myfin.by",
   "count": 208,
   "offers": [
@@ -621,36 +621,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2183-na-37-mesacev-vygodnyj-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "СтатусБанк",
-      "bankSlug": "statusbank",
-      "product": "Статус - Надёжный",
-      "currency": "BYN",
-      "rate": 12.0,
-      "termMonths": 18,
-      "yieldTotal": 21.22,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/statusbank/vklady/2057-status-nadyozhnyyi-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "СтатусБанк",
-      "bankSlug": "statusbank",
-      "product": "Статус - Надёжный на 13 месяцев",
-      "currency": "BYN",
-      "rate": 12.9,
-      "termMonths": 13,
-      "yieldTotal": 14.91,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/statusbank/vklady/2174-status-nadeznyj-na-13-mesacev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Приорбанк",
       "bankSlug": "priorbank",
       "product": "Пять звёзд. Скала",
@@ -713,6 +683,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/1488-online-reshenie?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Надёжный",
+      "currency": "BYN",
+      "rate": 12.0,
+      "termMonths": 18,
+      "yieldTotal": 20.69,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/2057-status-nadyozhnyyi-v-belorusskih-rublyah?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Паритетбанк",
@@ -903,6 +888,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2171-perspektiva-20-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Надёжный на 13 месяцев",
+      "currency": "BYN",
+      "rate": 12.6,
+      "termMonths": 13,
+      "yieldTotal": 14.54,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/2174-status-nadeznyj-na-13-mesacev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
