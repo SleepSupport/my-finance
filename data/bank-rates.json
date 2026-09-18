@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-17T09:51:46.824957+00:00",
+  "updatedAt": "2026-09-18T09:25:26.104298+00:00",
   "source": "myfin.by",
-  "count": 210,
+  "count": 211,
   "offers": [
     {
       "bank": "Банк ВТБ (Беларусь)",
@@ -180,9 +180,9 @@
       "bankSlug": "belagroprombank",
       "product": "Альтернатива плюс",
       "currency": "BYN",
-      "rate": 12.9,
+      "rate": 12.6,
       "termMonths": 12,
-      "yieldTotal": 14.09,
+      "yieldTotal": 13.75,
       "capitalization": true,
       "tags": [
         "Капитализация"
@@ -699,22 +699,6 @@
       "url": "https://myfin.by/bank/priorbank/vklady/1641-yelektronnyyi-depozit-vyshenet-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Доходный плюс",
-      "currency": "BYN",
-      "rate": 12.7,
-      "termMonths": 12,
-      "yieldTotal": 13.92,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Решение",
       "bankSlug": "reshenie",
       "product": "Online-решение",
@@ -949,6 +933,22 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2192-na-18-mesacev-nakopitelnyj-onlajn-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк Дабрабыт",
+      "bankSlug": "dabrabyt",
+      "product": "Хуткі на 13 месяцев (ежедневная капитализация)",
+      "currency": "BYN",
+      "rate": 12.6,
+      "termMonths": 13,
+      "yieldTotal": 14.54,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/dabrabyt/vklady/2203-hutki-na-13-mesacev-ezednevnaa-kapitalizacia?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
       "product": "Комплимент плюс",
@@ -1115,6 +1115,22 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/alfabank/vklady/2027-alfa-parus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Доходный плюс",
+      "currency": "BYN",
+      "rate": 12.4,
+      "termMonths": 12,
+      "yieldTotal": 13.57,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
