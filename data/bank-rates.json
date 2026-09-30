@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T11:10:26.550443+00:00",
+  "updatedAt": "2026-09-30T10:57:11.590400+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -8,9 +8,9 @@
       "bankSlug": "bank-vtb",
       "product": "Ежедневник онлайн",
       "currency": "BYN",
-      "rate": 5.0,
+      "rate": 4.5,
       "termMonths": 3,
-      "yieldTotal": 1.91,
+      "yieldTotal": 1.72,
       "capitalization": true,
       "tags": [
         "Онлайн-заявка",
@@ -214,9 +214,9 @@
       "bankSlug": "bank-vtb",
       "product": "Мои условия онлайн (безотзывный)",
       "currency": "BYN",
-      "rate": 4.3,
+      "rate": 3.3,
       "termMonths": 1,
-      "yieldTotal": 0.59,
+      "yieldTotal": 0.45,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -303,9 +303,9 @@
       "bankSlug": "bank-vtb",
       "product": "Мои условия (безотзывный)",
       "currency": "BYN",
-      "rate": 4.2,
+      "rate": 3.2,
       "termMonths": 1,
-      "yieldTotal": 0.58,
+      "yieldTotal": 0.44,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -318,9 +318,9 @@
       "bankSlug": "bank-vtb",
       "product": "Ежедневник",
       "currency": "BYN",
-      "rate": 4.9,
+      "rate": 4.4,
       "termMonths": 3,
-      "yieldTotal": 1.87,
+      "yieldTotal": 1.68,
       "capitalization": true,
       "tags": [
         "Онлайн-заявка",
