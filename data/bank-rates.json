@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T11:27:17.461036+00:00",
+  "updatedAt": "2026-10-02T10:55:00.127400+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -72,7 +72,7 @@
       "bankSlug": "belinvestbank",
       "product": "Личный выбор (безотзывный) в BYN",
       "currency": "BYN",
-      "rate": 4.27,
+      "rate": 4.2,
       "termMonths": 2,
       "yieldTotal": 0.4,
       "capitalization": true,
@@ -559,37 +559,6 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2154-rrb-byn-36?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
-      "product": "Детский",
-      "currency": "BYN",
-      "rate": 14.14,
-      "termMonths": 37,
-      "yieldTotal": 101.95,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
-      "product": "Личный выбор (безотзывный) в BYN online",
-      "currency": "BYN",
-      "rate": 4.75,
-      "termMonths": 2,
-      "yieldTotal": 0.45,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/1977-lichnyyi-vybor-bezotzyvnoyi-v-byn-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
       "product": "Правильный выбор онлайн (безотзывный) в BYN",
@@ -605,6 +574,22 @@
       "url": "https://myfin.by/bank/belarusbank/vklady/2110-pravilnyyi-vybor-onlayin-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Детский",
+      "currency": "BYN",
+      "rate": 14.0,
+      "termMonths": 37,
+      "yieldTotal": 100.56,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
       "product": "Правильный выбор (безотзывный) в BYN",
@@ -618,6 +603,21 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/belarusbank/vklady/2108-pravilnyyi-vybor-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Личный выбор (безотзывный) в BYN online",
+      "currency": "BYN",
+      "rate": 4.5,
+      "termMonths": 2,
+      "yieldTotal": 0.43,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/1977-lichnyyi-vybor-bezotzyvnoyi-v-byn-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Беларусбанк",
