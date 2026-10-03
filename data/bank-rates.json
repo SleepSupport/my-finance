@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-02T10:55:00.127400+00:00",
+  "updatedAt": "2026-10-03T10:15:17.739063+00:00",
   "source": "myfin.by",
-  "count": 213,
+  "count": 214,
   "offers": [
     {
       "bank": "Банк ВТБ (Беларусь)",
@@ -373,6 +373,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/dabrabyt/vklady/2123-kapitalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
+      "product": "RRB BYN online 13",
+      "currency": "BYN",
+      "rate": 12.6,
+      "termMonths": 13,
+      "yieldTotal": 14.54,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2158-rrb-byn-online-13?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк ВТБ (Беларусь)",
@@ -1043,21 +1058,6 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2153-rrb-byn-13?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
-      "product": "RRB BYN online 13",
-      "currency": "BYN",
-      "rate": 12.6,
-      "termMonths": 13,
-      "yieldTotal": 14.54,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2158-rrb-byn-online-13?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "СтатусБанк",
       "bankSlug": "statusbank",
       "product": "Статус - Надёжный на 13 месяцев",
@@ -1086,6 +1086,21 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2192-na-18-mesacev-nakopitelnyj-onlajn-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "СтатусБанк",
+      "bankSlug": "statusbank",
+      "product": "Статус - Премиум",
+      "currency": "BYN",
+      "rate": 12.6,
+      "termMonths": 12,
+      "yieldTotal": 12.95,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/statusbank/vklady/2207-status-premium?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "МТбанк",
