@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T10:58:00.736001+00:00",
+  "updatedAt": "2026-10-05T12:05:15.792187+00:00",
   "source": "myfin.by",
   "count": 214,
   "offers": [
@@ -574,21 +574,6 @@
       "url": "https://myfin.by/bank/rrb-bank/vklady/2154-rrb-byn-36?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Беларусбанк",
-      "bankSlug": "belarusbank",
-      "product": "Правильный выбор онлайн (безотзывный) в BYN",
-      "currency": "BYN",
-      "rate": 4.7,
-      "termMonths": 2,
-      "yieldTotal": 0.44,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belarusbank/vklady/2110-pravilnyyi-vybor-onlayin-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Белинвестбанк",
       "bankSlug": "belinvestbank",
       "product": "Детский",
@@ -603,21 +588,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Беларусбанк",
-      "bankSlug": "belarusbank",
-      "product": "Правильный выбор (безотзывный) в BYN",
-      "currency": "BYN",
-      "rate": 4.5,
-      "termMonths": 2,
-      "yieldTotal": 0.43,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belarusbank/vklady/2108-pravilnyyi-vybor-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белинвестбанк",
@@ -637,11 +607,41 @@
     {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
+      "product": "Правильный выбор онлайн (безотзывный) в BYN",
+      "currency": "BYN",
+      "rate": 4.7,
+      "termMonths": 2,
+      "yieldTotal": 0.44,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belarusbank/vklady/2110-pravilnyyi-vybor-onlayin-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Беларусбанк",
+      "bankSlug": "belarusbank",
+      "product": "Правильный выбор (безотзывный) в BYN",
+      "currency": "BYN",
+      "rate": 4.5,
+      "termMonths": 2,
+      "yieldTotal": 0.43,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belarusbank/vklady/2108-pravilnyyi-vybor-bezotzyvnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Беларусбанк",
+      "bankSlug": "belarusbank",
       "product": "Успешный Безотзывный Онл@йн",
       "currency": "BYN",
-      "rate": 11.9,
+      "rate": 11.6,
       "termMonths": 13,
-      "yieldTotal": 13.69,
+      "yieldTotal": 13.32,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -654,9 +654,9 @@
       "bankSlug": "belarusbank",
       "product": "Растем вместе (безотзывный) в BYN",
       "currency": "BYN",
-      "rate": 13.95,
+      "rate": 13.65,
       "termMonths": 60,
-      "yieldTotal": 100.07,
+      "yieldTotal": 97.12,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -669,9 +669,9 @@
       "bankSlug": "belarusbank",
       "product": "Успешный Безотзывный",
       "currency": "BYN",
-      "rate": 11.85,
+      "rate": 11.55,
       "termMonths": 13,
-      "yieldTotal": 13.63,
+      "yieldTotal": 13.26,
       "capitalization": true,
       "tags": [
         "Капитализация"
@@ -1226,21 +1226,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2182-na-13-mesacev-vygodnyj-plus-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Беларусбанк",
-      "bankSlug": "belarusbank",
-      "product": "Дамский к@приз (безотзывный)",
-      "currency": "BYN",
-      "rate": 11.9,
-      "termMonths": 13,
-      "yieldTotal": 13.69,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belarusbank/vklady/1823-damskiyi-kpriz-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Технобанк",
       "bankSlug": "technobank",
       "product": "Надежный клад Онлайн",
@@ -1333,6 +1318,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2040-nadezhnyyi-klad?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Беларусбанк",
+      "bankSlug": "belarusbank",
+      "product": "Дамский к@приз (безотзывный)",
+      "currency": "BYN",
+      "rate": 11.6,
+      "termMonths": 13,
+      "yieldTotal": 13.32,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belarusbank/vklady/1823-damskiyi-kpriz-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Цептер Банк",
