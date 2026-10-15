@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T09:57:11.861489+00:00",
+  "updatedAt": "2026-10-15T09:39:17.356753+00:00",
   "source": "myfin.by",
   "count": 214,
   "offers": [
@@ -623,22 +623,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2193-na-37-mesacev-vygodnyj-onlajn-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
-      "product": "Детский",
-      "currency": "BYN",
-      "rate": 14.0,
-      "termMonths": 37,
-      "yieldTotal": 100.56,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Белгазпромбанк",
       "bankSlug": "belgazprombank",
       "product": "На 37 месяцев выгодный плюс (безотзывный)",
@@ -653,21 +637,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2116-bezotzyvnyyi-vygodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
-      "product": "Личный выбор (безотзывный) в BYN online",
-      "currency": "BYN",
-      "rate": 4.5,
-      "termMonths": 2,
-      "yieldTotal": 0.43,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/1977-lichnyyi-vybor-bezotzyvnoyi-v-byn-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
@@ -789,6 +758,37 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/tkbank/vklady/2100-srochnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Детский",
+      "currency": "BYN",
+      "rate": 13.4,
+      "termMonths": 37,
+      "yieldTotal": 94.7,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Личный выбор (безотзывный) в BYN online",
+      "currency": "BYN",
+      "rate": 4.5,
+      "termMonths": 2,
+      "yieldTotal": 0.43,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/1977-lichnyyi-vybor-bezotzyvnoyi-v-byn-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Цептер Банк",
