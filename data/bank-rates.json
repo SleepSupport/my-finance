@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T11:12:45.951688+00:00",
+  "updatedAt": "2026-10-31T10:44:55.302792+00:00",
   "source": "myfin.by",
   "count": 215,
   "offers": [
@@ -287,23 +287,6 @@
     {
       "bank": "Банк ВТБ (Беларусь)",
       "bankSlug": "bank-vtb",
-      "product": "Ежедневник",
-      "currency": "BYN",
-      "rate": 4.4,
-      "termMonths": 3,
-      "yieldTotal": 1.68,
-      "capitalization": true,
-      "tags": [
-        "Онлайн-заявка",
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bank-vtb/vklady/2142-ezednevnik?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк ВТБ (Беларусь)",
-      "bankSlug": "bank-vtb",
       "product": "В теме",
       "currency": "BYN",
       "rate": 12.0,
@@ -329,6 +312,23 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bank-vtb/vklady/1993-moi-usloviya-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк ВТБ (Беларусь)",
+      "bankSlug": "bank-vtb",
+      "product": "Ежедневник",
+      "currency": "BYN",
+      "rate": 4.4,
+      "termMonths": 3,
+      "yieldTotal": 1.68,
+      "capitalization": true,
+      "tags": [
+        "Онлайн-заявка",
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bank-vtb/vklady/2142-ezednevnik?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
