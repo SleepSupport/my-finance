@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T13:11:45.131495+00:00",
+  "updatedAt": "2026-11-03T12:39:33.750110+00:00",
   "source": "myfin.by",
   "count": 214,
   "offers": [
@@ -241,11 +241,11 @@
     {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
-      "product": "Хуткі на 13 месяцев (ежедневная капитализация)",
+      "product": "«Хуткі» Онлайн (ежедневная капитализация)",
       "currency": "BYN",
-      "rate": 12.1,
+      "rate": 12.17,
       "termMonths": 13,
-      "yieldTotal": 13.93,
+      "yieldTotal": 14.02,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -348,7 +348,7 @@
     {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
-      "product": "Хуткі онлайн",
+      "product": "«Хуткі» Онлайн",
       "currency": "BYN",
       "rate": 0.9,
       "termMonths": 3,
@@ -499,20 +499,6 @@
       "url": "https://myfin.by/bank/dabrabyt/vklady/1892-tsudony?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Альтернатива плюс",
-      "currency": "BYN",
-      "rate": 12.6,
-      "termMonths": 12,
-      "yieldTotal": 13.75,
-      "capitalization": true,
-      "tags": [
-        "Капитализация"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Белгазпромбанк",
       "bankSlug": "belgazprombank",
       "product": "На 37 месяцев выгодный VIP (безотзывный)",
@@ -542,6 +528,20 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bvebank/vklady/1490-sberegatelnyyi-vkld?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Альтернатива плюс",
+      "currency": "BYN",
+      "rate": 12.15,
+      "termMonths": 12,
+      "yieldTotal": 13.23,
+      "capitalization": true,
+      "tags": [
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк РРБ",
@@ -914,22 +914,6 @@
       "url": "https://myfin.by/bank/technobank/vklady/2147-triogrand?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Доходный плюс",
-      "currency": "BYN",
-      "rate": 12.4,
-      "termMonths": 12,
-      "yieldTotal": 13.57,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "МТбанк",
       "bankSlug": "mtbank",
       "product": "МТБелки (безотзывный) от 1 года",
@@ -1255,6 +1239,22 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/reshenie/vklady/1854-pochtennyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Доходный плюс",
+      "currency": "BYN",
+      "rate": 11.9,
+      "termMonths": 12,
+      "yieldTotal": 13.02,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2114-dohodnyyi-plyus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
