@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-05T12:57:27.570585+00:00",
+  "updatedAt": "2026-11-06T12:44:49.157417+00:00",
   "source": "myfin.by",
-  "count": 214,
+  "count": 213,
   "offers": [
     {
       "bank": "Банк ВТБ (Беларусь)",
@@ -162,22 +162,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/paritetbank/vklady/2204-bezotzyvnyj-online-na-13-mesacev-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса ТОП в BYN (капитализация)",
-      "currency": "BYN",
-      "rate": 12.0,
-      "termMonths": 13,
-      "yieldTotal": 13.81,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/2201-bezotzyvnyj-vklad-taksa-top?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Сбер Банк",
