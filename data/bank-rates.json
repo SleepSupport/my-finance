@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T13:39:48.424240+00:00",
+  "updatedAt": "2026-11-10T13:17:18.990301+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -1210,9 +1210,9 @@
       "bankSlug": "reshenie",
       "product": "Формула успеха",
       "currency": "BYN",
-      "rate": 6.2,
+      "rate": 5.6,
       "termMonths": 2,
-      "yieldTotal": 0.78,
+      "yieldTotal": 0.71,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -1228,9 +1228,9 @@
       "bankSlug": "reshenie",
       "product": "Online-решение new",
       "currency": "BYN",
-      "rate": 6.2,
+      "rate": 5.6,
       "termMonths": 2,
-      "yieldTotal": 0.78,
+      "yieldTotal": 0.71,
       "capitalization": true,
       "tags": [
         "Пополнение",
