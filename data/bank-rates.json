@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T13:17:18.990301+00:00",
+  "updatedAt": "2026-11-11T12:29:06.809889+00:00",
   "source": "myfin.by",
   "count": 213,
   "offers": [
@@ -730,6 +730,22 @@
       "url": "https://myfin.by/bank/tkbank/vklady/2100-srochnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "МТбанк",
+      "bankSlug": "mtbank",
+      "product": "МТБелки Online (безотзывный) с фиксированной ставкой",
+      "currency": "BYN",
+      "rate": 6.0,
+      "termMonths": 12,
+      "yieldTotal": 6.17,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка",
+        "Снятие процентов"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Цептер Банк",
       "bankSlug": "zepterbank",
       "product": "В белорусских рублях",
@@ -808,22 +824,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "МТбанк",
-      "bankSlug": "mtbank",
-      "product": "МТБелки Online (безотзывный) с фиксированной ставкой",
-      "currency": "BYN",
-      "rate": 6.0,
-      "termMonths": 12,
-      "yieldTotal": 6.17,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка",
-        "Снятие процентов"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белинвестбанк",
@@ -2519,21 +2519,6 @@
     {
       "bank": "Банк РРБ",
       "bankSlug": "rrb-bank",
-      "product": "RRB USD online 24",
-      "currency": "USD",
-      "rate": 1.95,
-      "termMonths": 24,
-      "yieldTotal": 3.97,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/rrb-bank/vklady/2160-rrb-usd-online-24?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк РРБ",
-      "bankSlug": "rrb-bank",
       "product": "RRB USD 24",
       "currency": "USD",
       "rate": 1.95,
@@ -2545,6 +2530,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/rrb-bank/vklady/2176-rrb-usd-24?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк РРБ",
+      "bankSlug": "rrb-bank",
+      "product": "RRB USD online 24",
+      "currency": "USD",
+      "rate": 1.95,
+      "termMonths": 24,
+      "yieldTotal": 3.97,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/rrb-bank/vklady/2160-rrb-usd-online-24?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
@@ -2598,23 +2598,6 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2194-na-13-mesacev-loalnyj-vip-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Нео Банк Азия",
-      "bankSlug": "neobank",
-      "product": "Нео Безотзывный Online",
-      "currency": "USD",
-      "rate": 1.1,
-      "termMonths": 12,
-      "yieldTotal": 0.84,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка",
-        "Снятие процентов"
-      ],
-      "url": "https://myfin.by/bank/neobank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Белгазпромбанк",
       "bankSlug": "belgazprombank",
       "product": "На 7 месяцев лояльный VIP (безотзывный)",
@@ -2630,6 +2613,23 @@
         "Снятие процентов"
       ],
       "url": "https://myfin.by/bank/belgazprombank/vklady/2195-na-7-mesacev-loalnyj-vip-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Нео Банк Азия",
+      "bankSlug": "neobank",
+      "product": "Нео Безотзывный Online",
+      "currency": "USD",
+      "rate": 1.1,
+      "termMonths": 12,
+      "yieldTotal": 0.84,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка",
+        "Снятие процентов"
+      ],
+      "url": "https://myfin.by/bank/neobank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Сбер Банк",
@@ -2683,22 +2683,6 @@
       "url": "https://myfin.by/bank/neobank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "БНБ-Банк",
-      "bankSlug": "bnbank",
-      "product": "Безотзывный вклад Такса в валюте",
-      "currency": "USD",
-      "rate": 0.3,
-      "termMonths": 3,
-      "yieldTotal": 0.06,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bnbank/vklady/2015-srochnyyi-bezotzyvnyyi-usd?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Белагропромбанк",
       "bankSlug": "belagroprombank",
       "product": "Юбилейный",
@@ -2732,6 +2716,22 @@
       "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Безотзывный вклад Такса в валюте",
+      "currency": "USD",
+      "rate": 0.3,
+      "termMonths": 3,
+      "yieldTotal": 0.06,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/2015-srochnyyi-bezotzyvnyyi-usd?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Белагропромбанк",
       "bankSlug": "belagroprombank",
       "product": "Плюс к стабильности в валюте",
@@ -2748,6 +2748,71 @@
         "Еще"
       ],
       "url": "https://myfin.by/bank/belagroprombank/vklady/1809-plyus-k-stabilnosti-v-valyute?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Детский",
+      "currency": "USD",
+      "rate": 0.5,
+      "termMonths": 37,
+      "yieldTotal": 2.53,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Белинвестбанк",
+      "bankSlug": "belinvestbank",
+      "product": "Личный выбор (безотзывный) в валюте online",
+      "currency": "USD",
+      "rate": 0.5,
+      "termMonths": 24,
+      "yieldTotal": 1.0,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belinvestbank/vklady/2060-lichnyyi-vybor-bezotzyvnyyi-v-valyute-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Технобанк",
+      "bankSlug": "technobank",
+      "product": "Наше будущее",
+      "currency": "USD",
+      "rate": 0.5,
+      "termMonths": 60,
+      "yieldTotal": 2.57,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "МТбанк",
+      "bankSlug": "mtbank",
+      "product": "Актуальный безотзывный на 12 мес.",
+      "currency": "USD",
+      "rate": 0.5,
+      "termMonths": 12,
+      "yieldTotal": 0.38,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка",
+        "Снятие процентов"
+      ],
+      "url": "https://myfin.by/bank/mtbank/vklady/1421-aktualjnyyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белинвестбанк",
@@ -2782,71 +2847,6 @@
         "Еще"
       ],
       "url": "https://myfin.by/bank/mtbank/vklady/2016-aktualnyyi-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "МТбанк",
-      "bankSlug": "mtbank",
-      "product": "Актуальный безотзывный на 12 мес.",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 12,
-      "yieldTotal": 0.38,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка",
-        "Снятие процентов"
-      ],
-      "url": "https://myfin.by/bank/mtbank/vklady/1421-aktualjnyyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
-      "product": "Детский",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 37,
-      "yieldTotal": 2.53,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/1933-detskiyi-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Технобанк",
-      "bankSlug": "technobank",
-      "product": "Наше будущее",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 60,
-      "yieldTotal": 2.57,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белинвестбанк",
-      "bankSlug": "belinvestbank",
-      "product": "Личный выбор (безотзывный) в валюте online",
-      "currency": "USD",
-      "rate": 0.5,
-      "termMonths": 24,
-      "yieldTotal": 1.0,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belinvestbank/vklady/2060-lichnyyi-vybor-bezotzyvnyyi-v-valyute-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белгазпромбанк",
@@ -2994,23 +2994,6 @@
     {
       "bank": "Беларусбанк",
       "bankSlug": "belarusbank",
-      "product": "Большие возможности онл@йн (безотзывный)",
-      "currency": "USD",
-      "rate": 0.001,
-      "termMonths": 13,
-      "yieldTotal": 0.03,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка",
-        "Снятие процентов"
-      ],
-      "url": "https://myfin.by/bank/belarusbank/vklady/2011-bolshie-vozmozhnosti-onlyin-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Беларусбанк",
-      "bankSlug": "belarusbank",
       "product": "Большие возможности (безотзывный)",
       "currency": "USD",
       "rate": 0.001,
@@ -3024,6 +3007,23 @@
         "Снятие процентов"
       ],
       "url": "https://myfin.by/bank/belarusbank/vklady/2010-bolshie-vozmozhnosti-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Беларусбанк",
+      "bankSlug": "belarusbank",
+      "product": "Большие возможности онл@йн (безотзывный)",
+      "currency": "USD",
+      "rate": 0.001,
+      "termMonths": 13,
+      "yieldTotal": 0.03,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка",
+        "Снятие процентов"
+      ],
+      "url": "https://myfin.by/bank/belarusbank/vklady/2011-bolshie-vozmozhnosti-onlyin-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк БелВЭБ",
