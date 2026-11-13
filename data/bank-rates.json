@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T13:33:50.245352+00:00",
+  "updatedAt": "2026-11-13T12:53:20.670440+00:00",
   "source": "myfin.by",
   "count": 212,
   "offers": [
@@ -325,21 +325,6 @@
       "url": "https://myfin.by/bank/bank-vtb/vklady/2142-ezednevnik?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Банк ВТБ (Беларусь)",
-      "bankSlug": "bank-vtb",
-      "product": "Комплимент плюс",
-      "currency": "BYN",
-      "rate": 12.6,
-      "termMonths": 13,
-      "yieldTotal": 13.97,
-      "capitalization": false,
-      "tags": [
-        "Пополнение",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bank-vtb/vklady/2202-kompliment-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Банк Дабрабыт",
       "bankSlug": "dabrabyt",
       "product": "«Хуткі» Онлайн",
@@ -384,6 +369,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/rrb-bank/vklady/2158-rrb-byn-online-13?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк ВТБ (Беларусь)",
+      "bankSlug": "bank-vtb",
+      "product": "Комплимент плюс",
+      "currency": "BYN",
+      "rate": 12.17,
+      "termMonths": 13,
+      "yieldTotal": 13.49,
+      "capitalization": false,
+      "tags": [
+        "Пополнение",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bank-vtb/vklady/2202-kompliment-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
@@ -450,9 +450,9 @@
       "bankSlug": "bank-vtb",
       "product": "Мои условия (отзывный)",
       "currency": "BYN",
-      "rate": 3.7,
+      "rate": 2.8,
       "termMonths": 1,
-      "yieldTotal": 0.6,
+      "yieldTotal": 0.38,
       "capitalization": false,
       "tags": [
         "Пополнение",
