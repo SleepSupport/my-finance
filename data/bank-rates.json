@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T13:24:09.196444+00:00",
+  "updatedAt": "2026-11-17T14:09:02.900183+00:00",
   "source": "myfin.by",
   "count": 210,
   "offers": [
@@ -433,9 +433,9 @@
       "bankSlug": "bank-vtb",
       "product": "Мои условия (отзывный)",
       "currency": "BYN",
-      "rate": 2.8,
-      "termMonths": 1,
-      "yieldTotal": 0.38,
+      "rate": 3.3,
+      "termMonths": 3,
+      "yieldTotal": 0.93,
       "capitalization": false,
       "tags": [
         "Пополнение",
@@ -1667,9 +1667,9 @@
       "bankSlug": "reshenie",
       "product": "Свободное накопление",
       "currency": "BYN",
-      "rate": 6.0,
+      "rate": 5.0,
       "termMonths": 1,
-      "yieldTotal": 0.44,
+      "yieldTotal": 0.37,
       "capitalization": true,
       "tags": [
         "Пополнение",
