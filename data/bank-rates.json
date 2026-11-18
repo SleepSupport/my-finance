@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T14:09:02.900183+00:00",
+  "updatedAt": "2026-11-18T13:41:29.160164+00:00",
   "source": "myfin.by",
   "count": 210,
   "offers": [
@@ -2637,6 +2637,21 @@
       "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Белагропромбанк",
+      "bankSlug": "belagroprombank",
+      "product": "Юбилейный",
+      "currency": "USD",
+      "rate": 1.0,
+      "termMonths": 36,
+      "yieldTotal": 4.71,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/belagroprombank/vklady/2208-ubilejnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "БНБ-Банк",
       "bankSlug": "bnbank",
       "product": "Такса безотзывный в валюте",
@@ -2651,21 +2666,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bnbank/vklady/2015-srochnyyi-bezotzyvnyyi-usd?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Белагропромбанк",
-      "bankSlug": "belagroprombank",
-      "product": "Юбилейный",
-      "currency": "USD",
-      "rate": 1.0,
-      "termMonths": 36,
-      "yieldTotal": 4.71,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/belagroprombank/vklady/2208-ubilejnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Паритетбанк",
