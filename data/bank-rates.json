@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T14:09:55.628562+00:00",
+  "updatedAt": "2026-11-20T13:51:51.262260+00:00",
   "source": "myfin.by",
   "count": 210,
   "offers": [
@@ -34,23 +34,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/alfabank/vklady/2101-alfa-vklad-bezotzyvnyyi-v-byn-na-18-mesyatsev?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк Дабрабыт",
-      "bankSlug": "dabrabyt",
-      "product": "Хуткі",
-      "currency": "BYN",
-      "rate": 0.7,
-      "termMonths": 3,
-      "yieldTotal": 0.13,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка",
-        "Снятие процентов"
-      ],
-      "url": "https://myfin.by/bank/dabrabyt/vklady/1880-hutk?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Белагропромбанк",
@@ -367,6 +350,23 @@
         "Снятие процентов"
       ],
       "url": "https://myfin.by/bank/dabrabyt/vklady/1790-shchodry?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Банк Дабрабыт",
+      "bankSlug": "dabrabyt",
+      "product": "Хуткі",
+      "currency": "BYN",
+      "rate": 0.7,
+      "termMonths": 3,
+      "yieldTotal": 0.13,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка",
+        "Снятие процентов"
+      ],
+      "url": "https://myfin.by/bank/dabrabyt/vklady/1880-hutk?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк Дабрабыт",
