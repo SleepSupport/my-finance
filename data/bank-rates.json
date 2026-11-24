@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T15:43:36.651804+00:00",
+  "updatedAt": "2026-11-24T15:34:36.208816+00:00",
   "source": "myfin.by",
   "count": 210,
   "offers": [
@@ -1956,6 +1956,23 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/1829-otzyvnyyi-vygodnyyi-v-byn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Банк БелВЭБ",
+      "bankSlug": "bvebank",
+      "product": "Отзывный вклад (оффлайн)",
+      "currency": "BYN",
+      "rate": 3.8,
+      "termMonths": 3,
+      "yieldTotal": 0.72,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Пролонгация",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/bvebank/vklady/840-universaljnyyi-s-plavayuscheyi-protsentnoyi-stavkoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Сбер Банк",
       "bankSlug": "bps-sberbank",
       "product": "Приумножай+ Online (отзывный)",
@@ -2032,23 +2049,6 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2198-duet-onlajn?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Банк БелВЭБ",
-      "bankSlug": "bvebank",
-      "product": "Отзывный вклад (оффлайн)",
-      "currency": "BYN",
-      "rate": 3.8,
-      "termMonths": 3,
-      "yieldTotal": 0.72,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Пролонгация",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/bvebank/vklady/840-universaljnyyi-s-plavayuscheyi-protsentnoyi-stavkoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Технобанк",
