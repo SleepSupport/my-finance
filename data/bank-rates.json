@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-25T15:20:36.065751+00:00",
+  "updatedAt": "2026-11-26T14:46:45.189603+00:00",
   "source": "myfin.by",
-  "count": 210,
+  "count": 211,
   "offers": [
     {
       "bank": "Банк ВТБ (Беларусь)",
@@ -133,6 +133,21 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/bvebank/vklady/1811-personalnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "БНБ-Банк",
+      "bankSlug": "bnbank",
+      "product": "Такса ТОП безотзывный в BYN",
+      "currency": "BYN",
+      "rate": 14.33,
+      "termMonths": 37,
+      "yieldTotal": 55.15,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация"
+      ],
+      "url": "https://myfin.by/bank/bnbank/vklady/2201-bezotzyvnyj-vklad-taksa-top?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Паритетбанк",
@@ -495,6 +510,22 @@
       "url": "https://myfin.by/bank/belgazprombank/vklady/2191-na-37-mesacev-vygodnyj-vip-bezotzyvnyj?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Безотзывный Online",
+      "currency": "BYN",
+      "rate": 3.1,
+      "termMonths": 1,
+      "yieldTotal": 0.23,
+      "capitalization": true,
+      "tags": [
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
       "bank": "Банк БелВЭБ",
       "bankSlug": "bvebank",
       "product": "Безотзывный вклад (онлайн)",
@@ -523,6 +554,24 @@
         "Капитализация"
       ],
       "url": "https://myfin.by/bank/belagroprombank/vklady/2146-alternativa-plus?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Паритетбанк",
+      "bankSlug": "paritetbank",
+      "product": "Стабильный доход",
+      "currency": "BYN",
+      "rate": 3.0,
+      "termMonths": 1,
+      "yieldTotal": 0.22,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Досрочное снятие",
+        "Фиксированная ставка",
+        "Еще"
+      ],
+      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк РРБ",
@@ -633,22 +682,6 @@
       "url": "https://myfin.by/bank/technobank/vklady/1256-nashe-buduschee-bezotzyvnoyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Безотзывный Online",
-      "currency": "BYN",
-      "rate": 3.1,
-      "termMonths": 1,
-      "yieldTotal": 0.23,
-      "capitalization": true,
-      "tags": [
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/2004-bezotzyvnyyi-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "ТК Банк",
       "bankSlug": "tkbank",
       "product": "Безотзывный (капитализация)",
@@ -678,24 +711,6 @@
         "Снятие процентов"
       ],
       "url": "https://myfin.by/bank/mtbank/vklady/1356-mtbelki-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
-      "bank": "Паритетбанк",
-      "bankSlug": "paritetbank",
-      "product": "Стабильный доход",
-      "currency": "BYN",
-      "rate": 3.0,
-      "termMonths": 1,
-      "yieldTotal": 0.22,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Досрочное снятие",
-        "Фиксированная ставка",
-        "Еще"
-      ],
-      "url": "https://myfin.by/bank/paritetbank/vklady/1505-stabilnyyi-dohod-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Цептер Банк",
