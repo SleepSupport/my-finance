@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T14:46:45.189603+00:00",
+  "updatedAt": "2026-11-27T14:45:04.218346+00:00",
   "source": "myfin.by",
   "count": 211,
   "offers": [
@@ -8,9 +8,9 @@
       "bankSlug": "bank-vtb",
       "product": "Ежедневник онлайн",
       "currency": "BYN",
-      "rate": 4.5,
+      "rate": 6.1,
       "termMonths": 3,
-      "yieldTotal": 1.72,
+      "yieldTotal": 2.34,
       "capitalization": true,
       "tags": [
         "Онлайн-заявка",
@@ -105,9 +105,9 @@
       "bankSlug": "neobank",
       "product": "Нео Безотзывный Online на 13 месяцев (ежедневная капитализация)",
       "currency": "BYN",
-      "rate": 11.0,
+      "rate": 10.5,
       "termMonths": 13,
-      "yieldTotal": 12.59,
+      "yieldTotal": 11.99,
       "capitalization": true,
       "tags": [
         "Пополнение",
@@ -201,9 +201,9 @@
       "bankSlug": "bank-vtb",
       "product": "Мои условия онлайн (безотзывный)",
       "currency": "BYN",
-      "rate": 3.3,
+      "rate": 4.8,
       "termMonths": 1,
-      "yieldTotal": 0.45,
+      "yieldTotal": 0.66,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -245,9 +245,9 @@
       "bankSlug": "bank-vtb",
       "product": "Мои условия (безотзывный)",
       "currency": "BYN",
-      "rate": 3.2,
+      "rate": 4.7,
       "termMonths": 1,
-      "yieldTotal": 0.44,
+      "yieldTotal": 0.64,
       "capitalization": true,
       "tags": [
         "Капитализация",
@@ -261,9 +261,9 @@
       "bankSlug": "bank-vtb",
       "product": "Ежедневник",
       "currency": "BYN",
-      "rate": 4.4,
+      "rate": 6.0,
       "termMonths": 3,
-      "yieldTotal": 1.68,
+      "yieldTotal": 2.3,
       "capitalization": true,
       "tags": [
         "Онлайн-заявка",
@@ -873,23 +873,6 @@
       "url": "https://myfin.by/bank/belinvestbank/vklady/1977-lichnyyi-vybor-bezotzyvnoyi-v-byn-online?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Нео Банк Азия",
-      "bankSlug": "neobank",
-      "product": "Нео Безотзывный Online",
-      "currency": "BYN",
-      "rate": 3.3,
-      "termMonths": 1,
-      "yieldTotal": 0.24,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Фиксированная ставка",
-        "Снятие процентов"
-      ],
-      "url": "https://myfin.by/bank/neobank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Сбер Банк",
       "bankSlug": "bps-sberbank",
       "product": "Сохраняй безотзывный в BYN",
@@ -923,24 +906,6 @@
       "url": "https://myfin.by/bank/reshenie/vklady/2173-versina-uspeha?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
-      "bank": "Нео Банк Азия",
-      "bankSlug": "neobank",
-      "product": "Нео Безотзывный",
-      "currency": "BYN",
-      "rate": 3.1,
-      "termMonths": 1,
-      "yieldTotal": 0.23,
-      "capitalization": true,
-      "tags": [
-        "Пополнение",
-        "Капитализация",
-        "Пролонгация",
-        "Фиксированная ставка",
-        "Еще"
-      ],
-      "url": "https://myfin.by/bank/neobank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
-    },
-    {
       "bank": "Технобанк",
       "bankSlug": "technobank",
       "product": "ТриоГранд",
@@ -954,6 +919,23 @@
         "Фиксированная ставка"
       ],
       "url": "https://myfin.by/bank/technobank/vklady/2147-triogrand?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Нео Банк Азия",
+      "bankSlug": "neobank",
+      "product": "Нео Безотзывный Online",
+      "currency": "BYN",
+      "rate": 3.3,
+      "termMonths": 1,
+      "yieldTotal": 0.24,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Фиксированная ставка",
+        "Снятие процентов"
+      ],
+      "url": "https://myfin.by/bank/neobank/vklady/1926-altyn-online-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "МТбанк",
@@ -970,6 +952,24 @@
         "Снятие процентов"
       ],
       "url": "https://myfin.by/bank/mtbank/vklady/1906-mtbelki-fiks?utm_source=myfin&utm_medium=organic&utm_campaign=product"
+    },
+    {
+      "bank": "Нео Банк Азия",
+      "bankSlug": "neobank",
+      "product": "Нео Безотзывный",
+      "currency": "BYN",
+      "rate": 3.1,
+      "termMonths": 1,
+      "yieldTotal": 0.23,
+      "capitalization": true,
+      "tags": [
+        "Пополнение",
+        "Капитализация",
+        "Пролонгация",
+        "Фиксированная ставка",
+        "Еще"
+      ],
+      "url": "https://myfin.by/bank/neobank/vklady/1925-altyn-bezotzyvnyyi?utm_source=myfin&utm_medium=organic&utm_campaign=product"
     },
     {
       "bank": "Банк РРБ",
